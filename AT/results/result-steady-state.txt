@@ -1,0 +1,1785 @@
+Java 8 found at /usr/lib/jvm/java-8-openjdk/jre/bin/java
+BBC started
+06:18:20.148 [main] INFO de.learnlib.util.Experiment - Starting round 1
+06:18:20.151 [main] INFO de.learnlib.util.Experiment - Learning
+06:18:33.862 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:18:35.289 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:18:36.032 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 36.85246697066634
+06:18:36.764 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:18:38.642 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 37.81705827961652
+06:18:39.079 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.173101492080193
+06:18:39.457 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 14.770240022281627
+06:18:39.839 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:18:40.221 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.59341616233449
+06:18:40.603 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:18:40.980 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:18:41.355 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.53381875217039
+06:18:41.732 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.529868517578905
+06:18:42.111 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 28.700435886741488
+06:18:42.489 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:18:42.868 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.77106508061017
+06:18:43.250 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:18:43.630 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 13.465040845794121
+06:18:44.012 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:18:44.408 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.337309719756135
+06:18:44.812 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.05021468623808
+06:18:45.200 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.077697405386346
+06:18:45.619 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:18:46.024 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:18:46.439 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:18:46.895 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:18:47.288 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.160467207135582
+06:18:47.677 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:18:48.082 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:18:48.503 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:18:48.918 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.11407032684362
+06:18:49.326 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.067178513515273
+06:18:49.755 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:18:50.189 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.518575100775024
+06:18:50.621 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:18:51.048 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:18:51.473 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:18:51.885 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:18:52.330 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.637724214634417
+06:18:52.756 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:18:53.184 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 28.286520242352708
+06:18:53.591 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:18:53.975 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.740394476092746
+06:18:54.359 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 33.189317773899276
+06:18:54.746 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:18:55.131 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.130205946636636
+06:18:55.510 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:18:55.887 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.095974435350755
+06:18:56.281 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 28.09960572286596
+06:18:56.662 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.16493015728247
+06:18:57.041 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.66796444372378
+06:18:57.422 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:18:57.799 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.17988193360058
+06:18:58.183 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:18:58.557 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:18:58.939 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.474738168207296
+06:18:59.317 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:18:59.693 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.28025012994867
+06:19:00.073 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.42325001285019
+06:19:00.450 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:19:00.831 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.40403925950177
+06:19:01.207 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.437570191115
+06:19:01.586 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 33.68866297986406
+06:19:01.966 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:19:02.340 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:19:02.715 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.28730123903988
+06:19:03.092 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:19:03.493 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:19:03.928 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.86591188627354
+06:19:04.332 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.533127149137428
+06:19:04.778 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.074909061062925
+06:19:05.180 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.09133609069178
+06:19:05.649 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:19:06.055 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:19:06.465 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:19:06.861 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.01779326860144
+06:19:07.243 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:19:07.632 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 18.228201723538078
+06:19:08.054 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:19:08.463 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.77389104788044
+06:19:08.897 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:19:09.330 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 23.569428514076023
+06:19:09.752 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 49.82540938544136
+06:19:10.178 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 8.682200444288824
+06:19:10.599 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:19:11.033 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:19:11.462 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:19:11.888 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:19:12.341 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:19:12.765 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.601999783079435
+06:19:13.204 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:19:13.584 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:19:13.970 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10456304313418
+06:19:14.353 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.88898248813628
+06:19:14.736 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:19:15.120 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:19:15.505 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 27.80900227324686
+06:19:15.886 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.10838309207729
+06:19:16.268 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.132484506844975
+06:19:16.647 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:19:17.026 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:19:17.398 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:19:17.776 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:19:18.158 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.742838548398566
+06:19:18.533 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.56910218221094
+06:19:18.910 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:19:19.287 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 33.61526370364565
+06:19:19.662 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.216616809830086
+06:19:20.041 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:19:20.415 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.751588522625354
+06:19:20.789 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:19:21.165 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.57627648609177
+06:19:21.543 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:19:21.926 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.108196739326715
+06:19:22.345 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:19:22.746 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 26.747256245987273
+06:19:23.145 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.20044117858441
+06:19:23.589 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:19:24.020 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:19:24.496 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.31967548100715
+06:19:24.892 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.302524223956013
+06:19:25.285 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.57191500818317
+06:19:25.672 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.794652343636514
+06:19:26.076 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.919195043743883
+06:19:26.480 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:19:26.883 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.93635227078245
+06:19:27.296 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.54637171718694
+06:19:27.700 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.17827900267659
+06:19:28.114 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:19:28.523 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 28.882835240966784
+06:19:28.917 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 17.343760865288587
+06:19:29.355 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.79828129033021
+06:19:29.753 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.658858438303625
+06:19:30.142 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:19:30.545 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 17.20473579566064
+06:19:30.965 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.415372653832506
+06:19:31.347 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.63770258550723
+06:19:31.725 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.76714224151203
+06:19:32.117 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.4954397714247
+06:19:32.510 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:19:32.904 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.8834056569643
+06:19:33.282 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:19:33.665 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:19:34.045 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.88548123136897
+06:19:34.424 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.94980375238489
+06:19:34.811 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.741660862936754
+06:19:35.193 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.13721530146711
+06:19:35.575 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.65947609168357
+06:19:35.957 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 73.92968791335778
+06:19:36.348 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.304098312567717
+06:19:36.729 [Thread-0] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.80905920439683
+06:19:36.730 [main] INFO de.learnlib.util.Experiment - ab bb ab ba ba bb aa bb ab ab ab ba ba ba ab
+06:19:36.730 [main] INFO de.learnlib.util.Experiment - Starting round 2
+06:19:36.730 [main] INFO de.learnlib.util.Experiment - Learning
+06:20:12.567 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:20:13.243 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:20:13.243 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 36.85246697066634
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 37.81705827961652
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.173101492080193
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.59341616233449
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.53381875217039
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.77106508061017
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.05021468623808
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.11407032684362
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.518575100775024
+06:20:13.244 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 33.189317773899276
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.095974435350755
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 28.09960572286596
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.16493015728247
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.66796444372378
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.17988193360058
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.474738168207296
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.28025012994867
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:20:13.245 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 33.68866297986406
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.86591188627354
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.533127149137428
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.074909061062925
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.09133609069178
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.01779326860144
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 49.82540938544136
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:20:13.246 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.88898248813628
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.742838548398566
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.56910218221094
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.57627648609177
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.108196739326715
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:20:13.247 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.31967548100715
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.57191500818317
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.919195043743883
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.93635227078245
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.54637171718694
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.17827900267659
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 28.882835240966784
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.79828129033021
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 24.415372653832506
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.4954397714247
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.8834056569643
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.88548123136897
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.94980375238489
+06:20:13.248 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.65947609168357
+06:20:13.249 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 73.92968791335778
+06:20:13.249 [Thread-1] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.304098312567717
+06:20:13.254 [main] INFO de.learnlib.util.Experiment - aa ba ba bb ab ba aa bb bb bb ab aa ab bb ab
+06:20:13.254 [main] INFO de.learnlib.util.Experiment - Starting round 3
+06:20:13.254 [main] INFO de.learnlib.util.Experiment - Learning
+06:20:29.421 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:20:30.144 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:20:30.144 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:20:30.144 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 37.81705827961652
+06:20:30.144 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.173101492080193
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.53381875217039
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.05021468623808
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.11407032684362
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.518575100775024
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:20:30.145 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.095974435350755
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.16493015728247
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.66796444372378
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.17988193360058
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.474738168207296
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.86591188627354
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.09133609069178
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.01779326860144
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 49.82540938544136
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:20:30.146 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.88898248813628
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.742838548398566
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.56910218221094
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.108196739326715
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.31967548100715
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.57191500818317
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.919195043743883
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.93635227078245
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.54637171718694
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.79828129033021
+06:20:30.147 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.8834056569643
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.88548123136897
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.94980375238489
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.65947609168357
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 73.92968791335778
+06:20:30.148 [Thread-2] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.80905920439683
+06:20:30.152 [main] INFO de.learnlib.util.Experiment - ab bb ab ba ba bb aa bb ab ab ab ba ba ba ab
+06:20:30.152 [main] INFO de.learnlib.util.Experiment - Starting round 4
+06:20:30.152 [main] INFO de.learnlib.util.Experiment - Learning
+06:20:45.564 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:20:46.333 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.173101492080193
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.53381875217039
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.05021468623808
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:20:46.334 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.11407032684362
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.518575100775024
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.095974435350755
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.16493015728247
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.66796444372378
+06:20:46.335 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.17988193360058
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.474738168207296
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.86591188627354
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.09133609069178
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:20:46.336 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.01779326860144
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 49.82540938544136
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.88898248813628
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:20:46.337 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.742838548398566
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.56910218221094
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.108196739326715
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.31967548100715
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.57191500818317
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.919195043743883
+06:20:46.338 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.93635227078245
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.54637171718694
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.79828129033021
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.8834056569643
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.88548123136897
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.94980375238489
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.65947609168357
+06:20:46.339 [Thread-3] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 73.92968791335778
+06:20:46.340 [main] INFO de.learnlib.util.Experiment - ab aa aa bb aa aa ab bb ab aa ba ba ab ab ab
+06:20:46.340 [main] INFO de.learnlib.util.Experiment - Starting round 5
+06:20:46.341 [main] INFO de.learnlib.util.Experiment - Learning
+06:21:48.003 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.529868517578905
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:21:48.670 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.095974435350755
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.66796444372378
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.474738168207296
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.28730123903988
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.86591188627354
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.09133609069178
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 49.82540938544136
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.88898248813628
+06:21:48.671 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.742838548398566
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.56910218221094
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.31967548100715
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.57191500818317
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.919195043743883
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.54637171718694
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.79828129033021
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.88548123136897
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.94980375238489
+06:21:48.672 [Thread-4] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.65947609168357
+06:21:48.672 [main] INFO de.learnlib.util.Experiment - ab bb ab aa ab bb aa bb aa ab ab ba aa ba ba
+06:21:48.673 [main] INFO de.learnlib.util.Experiment - Starting round 6
+06:21:48.673 [main] INFO de.learnlib.util.Experiment - Learning
+06:21:56.240 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:21:57.110 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.529868517578905
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:21:57.111 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.095974435350755
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.474738168207296
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.86591188627354
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.09133609069178
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.88898248813628
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:21:57.112 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.742838548398566
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.56910218221094
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.31967548100715
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.57191500818317
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.919195043743883
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.79828129033021
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.88548123136897
+06:21:57.113 [Thread-5] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.94980375238489
+06:21:57.113 [main] INFO de.learnlib.util.Experiment - ab ab ab bb aa bb ba ab bb aa ba ba ab aa bb
+06:21:57.114 [main] INFO de.learnlib.util.Experiment - Starting round 7
+06:21:57.114 [main] INFO de.learnlib.util.Experiment - Learning
+06:22:04.652 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:22:05.329 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:22:05.329 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.529868517578905
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.095974435350755
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.474738168207296
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.86591188627354
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.09133609069178
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:22:05.330 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.88898248813628
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.56910218221094
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.31967548100715
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.57191500818317
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 16.919195043743883
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.79828129033021
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:22:05.331 [Thread-6] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.88548123136897
+06:22:05.331 [main] INFO de.learnlib.util.Experiment - ab aa bb ba bb bb bb ab ba bb ab ba aa bb ba
+06:22:05.332 [main] INFO de.learnlib.util.Experiment - Starting round 8
+06:22:05.332 [main] INFO de.learnlib.util.Experiment - Learning
+06:22:08.228 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.529868517578905
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.86591188627354
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:22:08.850 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.31967548100715
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:22:08.851 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:22:08.852 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:22:08.852 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:22:08.852 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:22:08.852 [Thread-7] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 73.92968791335778
+06:22:08.862 [main] INFO de.learnlib.util.Experiment - ab aa aa bb aa aa ab bb ab aa ba ba ab ab ab
+06:22:08.863 [main] INFO de.learnlib.util.Experiment - Starting round 9
+06:22:08.863 [main] INFO de.learnlib.util.Experiment - Learning
+06:22:39.067 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.10584970089998
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.529868517578905
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:22:39.781 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 20.271808256822254
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.34565396590209
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 25.216616809830086
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.55732485882625
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:22:39.782 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:22:39.783 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:22:39.783 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:22:39.783 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.58296114035422
+06:22:39.783 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:22:39.783 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:22:39.783 [Thread-8] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.5045171989363
+06:22:39.783 [main] INFO de.learnlib.util.Experiment - ab ab ba aa ba ab ab bb ab ba ab aa bb ba ba
+06:22:39.783 [main] INFO de.learnlib.util.Experiment - Starting round 10
+06:22:39.783 [main] INFO de.learnlib.util.Experiment - Learning
+06:22:57.911 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:22:58.659 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:22:58.659 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:22:58.659 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:22:58.659 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:22:58.659 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:22:58.659 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 31.669208514178806
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:22:58.660 [Thread-9] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.59461803479458
+06:22:58.661 [main] INFO de.learnlib.util.Experiment - bb ba aa ba ba ba ab aa ba ba bb bb aa ba ab
+06:22:58.661 [main] INFO de.learnlib.util.Experiment - Starting round 11
+06:22:58.661 [main] INFO de.learnlib.util.Experiment - Learning
+06:23:02.570 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:23:03.237 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.40955778044602
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 30.67469771780587
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.29128239354859
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.127295757491
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:23:03.238 [Thread-10] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.51252871916245
+06:23:03.238 [main] INFO de.learnlib.util.Experiment - aa aa ab ab ab ba aa bb bb ab bb ab ba ab bb
+06:23:03.238 [main] INFO de.learnlib.util.Experiment - Starting round 12
+06:23:03.238 [main] INFO de.learnlib.util.Experiment - Learning
+06:23:25.665 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.48514438709097
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.74840462248662
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:23:26.372 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:23:26.373 [Thread-11] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 32.308038219858204
+06:23:26.373 [main] INFO de.learnlib.util.Experiment - ba bb bb ab ab bb bb ba ab ba bb ba ab bb bb
+06:23:26.373 [main] INFO de.learnlib.util.Experiment - Starting round 13
+06:23:26.373 [main] INFO de.learnlib.util.Experiment - Learning
+06:23:33.286 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:23:34.247 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 21.99684777484832
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:23:34.248 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:23:34.249 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:23:34.249 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:23:34.249 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:23:34.249 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:23:34.249 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:23:34.249 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:23:34.249 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:23:34.249 [Thread-12] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.63770258550723
+06:23:34.249 [main] INFO de.learnlib.util.Experiment - ab ba ab ba ab ab aa ba ba bb ab ab ba ab bb
+06:23:34.249 [main] INFO de.learnlib.util.Experiment - Starting round 14
+06:23:34.249 [main] INFO de.learnlib.util.Experiment - Learning
+06:23:49.806 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.74947210177265
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.53286559250358
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:23:50.544 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.81552086120895
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.4247041522634
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.00267960764417
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:23:50.545 [Thread-13] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.7490724033906
+06:23:50.546 [main] INFO de.learnlib.util.Experiment - bb bb aa aa bb ab aa aa ab ba ab ab ba ba aa
+06:23:50.546 [main] INFO de.learnlib.util.Experiment - Starting round 15
+06:23:50.546 [main] INFO de.learnlib.util.Experiment - Learning
+06:24:09.605 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:24:10.382 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:24:10.383 [Thread-14] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.2689641877262
+06:24:10.384 [main] INFO de.learnlib.util.Experiment - bb ab ab ab aa bb aa aa aa ba ab bb bb ab aa
+06:24:10.384 [main] INFO de.learnlib.util.Experiment - Starting round 16
+06:24:10.384 [main] INFO de.learnlib.util.Experiment - Learning
+06:24:55.140 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.56034445207595
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.00371388362295
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.96893138392683
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:24:55.861 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.121102957870775
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:24:55.862 [Thread-15] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.425734053866094
+06:24:55.862 [main] INFO de.learnlib.util.Experiment - ba ba ab aa aa bb aa aa ab aa ab ab bb aa bb
+06:24:55.862 [main] INFO de.learnlib.util.Experiment - Starting round 17
+06:24:55.862 [main] INFO de.learnlib.util.Experiment - Learning
+06:25:25.066 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:25:26.048 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.3843837506694
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:25:26.049 [Thread-16] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.75277005151632
+06:25:26.049 [main] INFO de.learnlib.util.Experiment - bb aa aa ab bb bb ab ab ab ab bb ab ab aa aa
+06:25:26.049 [main] INFO de.learnlib.util.Experiment - Starting round 18
+06:25:26.049 [main] INFO de.learnlib.util.Experiment - Learning
+06:25:35.042 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.23572108595998
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.340125034160465
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 59.81496032385874
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.733988161376004
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.418033250166275
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.21004182998951
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:25:35.712 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:25:35.713 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:25:35.713 [Thread-17] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.851717511847795
+06:25:35.713 [main] INFO de.learnlib.util.Experiment - ab ba bb aa aa bb ba ab ab bb ba ba aa ba ba
+06:25:35.713 [main] INFO de.learnlib.util.Experiment - Starting round 19
+06:25:35.713 [main] INFO de.learnlib.util.Experiment - Learning
+06:25:47.528 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:25:48.249 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:25:48.250 [Thread-18] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.75838498498956
+06:25:48.250 [main] INFO de.learnlib.util.Experiment - ab aa ba ab ab ab ab ab ba ab ba bb ab aa ab
+06:25:48.250 [main] INFO de.learnlib.util.Experiment - Starting round 20
+06:25:48.250 [main] INFO de.learnlib.util.Experiment - Learning
+06:26:19.009 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:26:19.836 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:26:19.836 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:26:19.836 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:26:19.836 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:26:19.837 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:26:19.838 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:26:19.838 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:26:19.838 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:26:19.838 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:26:19.838 [Thread-19] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:26:19.838 [main] INFO de.learnlib.util.Experiment - ab aa bb ab ab ab ab ab bb ab ab ab ba ba aa
+06:26:19.838 [main] INFO de.learnlib.util.Experiment - Starting round 21
+06:26:19.838 [main] INFO de.learnlib.util.Experiment - Learning
+06:26:31.100 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:26:31.758 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:26:31.759 [Thread-20] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.00147719164356
+06:26:31.759 [main] INFO de.learnlib.util.Experiment - ab ab ba aa ba aa aa ab bb ba ab ab bb ba ab
+06:26:31.759 [main] INFO de.learnlib.util.Experiment - Starting round 22
+06:26:31.759 [main] INFO de.learnlib.util.Experiment - Learning
+06:26:38.481 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:26:39.223 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:26:39.223 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:26:39.223 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.95630933507327
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:26:39.224 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:26:39.225 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:26:39.225 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:26:39.225 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:26:39.225 [Thread-21] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:26:39.225 [main] INFO de.learnlib.util.Experiment - bb bb aa bb ba ab aa ab aa aa bb bb aa bb bb
+06:26:39.225 [main] INFO de.learnlib.util.Experiment - Starting round 23
+06:26:39.225 [main] INFO de.learnlib.util.Experiment - Learning
+06:27:03.461 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:27:04.194 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:27:04.195 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:27:04.196 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:27:04.196 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:27:04.196 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:27:04.196 [Thread-22] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.00323334212521
+06:27:04.197 [main] INFO de.learnlib.util.Experiment - aa aa aa ab aa bb ba ab bb ba aa bb bb ba ab
+06:27:04.197 [main] INFO de.learnlib.util.Experiment - Starting round 24
+06:27:04.197 [main] INFO de.learnlib.util.Experiment - Learning
+06:27:09.272 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:27:09.924 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.53470425230218
+06:27:09.924 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.9573387315519
+06:27:09.924 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:27:09.924 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 64.41430343851422
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 75.79571253769228
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.91012322523345
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 52.85747990732338
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:27:09.925 [Thread-23] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.64355727626203
+06:27:09.925 [main] INFO de.learnlib.util.Experiment - bb ab ba ab ba aa ab aa ba bb aa aa ab bb ba
+06:27:09.925 [main] INFO de.learnlib.util.Experiment - Starting round 25
+06:27:09.925 [main] INFO de.learnlib.util.Experiment - Learning
+06:27:29.224 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.529868517578905
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:27:29.920 [Thread-24] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.329758131561775
+06:27:29.920 [main] INFO de.learnlib.util.Experiment - bb ba bb ab ba bb bb ab ab ba ab ab ab aa bb
+06:27:29.920 [main] INFO de.learnlib.util.Experiment - Starting round 26
+06:27:29.921 [main] INFO de.learnlib.util.Experiment - Learning
+06:27:51.763 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:27:52.410 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.529868517578905
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.32543465172368
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:27:52.411 [Thread-25] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.010581336430945
+06:27:52.411 [main] INFO de.learnlib.util.Experiment - aa ba ab bb bb ab aa ba aa aa ba ba ab ba ba
+06:27:52.411 [main] INFO de.learnlib.util.Experiment - Starting round 27
+06:27:52.411 [main] INFO de.learnlib.util.Experiment - Learning
+06:28:01.276 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:28:01.973 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:28:01.973 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:28:01.974 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:28:01.974 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:28:01.974 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:28:01.974 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:28:01.974 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:28:01.974 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.16493015728247
+06:28:01.974 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:28:01.974 [Thread-26] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.150708765410926
+06:28:01.974 [main] INFO de.learnlib.util.Experiment - aa aa ab ba ab ba aa ba ab aa ab ba ab ab ab
+06:28:01.974 [main] INFO de.learnlib.util.Experiment - Starting round 28
+06:28:01.974 [main] INFO de.learnlib.util.Experiment - Learning
+06:28:08.030 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.16493015728247
+06:28:08.669 [Thread-27] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:28:08.670 [main] INFO de.learnlib.util.Experiment - bb bb aa aa aa ab bb ba aa ab aa aa bb ba bb
+06:28:08.670 [main] INFO de.learnlib.util.Experiment - Starting round 29
+06:28:08.670 [main] INFO de.learnlib.util.Experiment - Learning
+06:28:15.153 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:28:15.822 [Thread-28] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:28:15.822 [Thread-28] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.505794538032646
+06:28:15.822 [Thread-28] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:28:15.822 [Thread-28] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:28:15.822 [Thread-28] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:28:15.822 [Thread-28] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:28:15.822 [Thread-28] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:28:15.822 [Thread-28] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 35.16493015728247
+06:28:15.822 [main] INFO de.learnlib.util.Experiment - bb ab bb aa aa ab ba ba bb bb ab aa bb ab aa
+06:28:15.822 [main] INFO de.learnlib.util.Experiment - Starting round 30
+06:28:15.822 [main] INFO de.learnlib.util.Experiment - Learning
+06:28:26.549 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:28:27.235 [Thread-29] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:28:27.235 [Thread-29] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:28:27.235 [Thread-29] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:28:27.236 [Thread-29] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:28:27.236 [Thread-29] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:28:27.236 [Thread-29] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.83173910252266
+06:28:27.236 [main] INFO de.learnlib.util.Experiment - aa aa bb ab ba ba aa bb ab ab ba aa ba bb bb
+06:28:27.236 [main] INFO de.learnlib.util.Experiment - Starting round 31
+06:28:27.236 [main] INFO de.learnlib.util.Experiment - Learning
+06:28:33.581 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:28:34.281 [Thread-30] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:28:34.281 [Thread-30] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:28:34.281 [Thread-30] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:28:34.281 [Thread-30] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:28:34.281 [Thread-30] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.477493728652775
+06:28:34.282 [main] INFO de.learnlib.util.Experiment - bb ba bb ba bb bb bb bb bb ba bb ba ba ba ba
+06:28:34.282 [main] INFO de.learnlib.util.Experiment - Starting round 32
+06:28:34.282 [main] INFO de.learnlib.util.Experiment - Learning
+06:31:54.114 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:31:54.756 [Thread-31] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:31:54.757 [Thread-31] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:31:54.757 [Thread-31] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:31:54.757 [Thread-31] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 83.98238862632982
+06:31:54.757 [main] INFO de.learnlib.util.Experiment - aa ba aa aa aa aa ab aa aa ab ab bb aa bb aa
+06:31:54.757 [main] INFO de.learnlib.util.Experiment - Starting round 33
+06:31:54.757 [main] INFO de.learnlib.util.Experiment - Learning
+06:32:13.268 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:32:14.009 [Thread-32] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:32:14.009 [Thread-32] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:32:14.009 [Thread-32] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:32:14.009 [Thread-32] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 84.11238621882823
+06:32:14.009 [main] INFO de.learnlib.util.Experiment - ab aa bb ab ab ab ab ab bb ab ab ab ba ba aa
+06:32:14.009 [main] INFO de.learnlib.util.Experiment - Starting round 34
+06:32:14.009 [main] INFO de.learnlib.util.Experiment - Learning
+06:32:19.691 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:32:20.870 [Thread-33] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:32:20.870 [Thread-33] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:32:20.870 [Thread-33] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.20003068688226
+06:32:20.871 [main] INFO de.learnlib.util.Experiment - aa aa aa ba bb bb bb ab aa bb ab ab ab aa aa
+06:32:20.871 [main] INFO de.learnlib.util.Experiment - Starting round 35
+06:32:20.871 [main] INFO de.learnlib.util.Experiment - Learning
+06:32:30.728 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:32:31.503 [Thread-34] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 40.162015558776574
+06:32:31.508 [main] INFO de.learnlib.util.Experiment - ba aa ba aa ba bb aa ab ab bb aa aa aa ab aa
+06:32:31.508 [main] INFO de.learnlib.util.Experiment - Starting round 36
+06:32:31.508 [main] INFO de.learnlib.util.Experiment - Learning
+06:33:00.358 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:33:04.068 [Thread-35] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 47.77605352684428
+06:33:04.069 [main] INFO de.learnlib.util.Experiment - bb ab ba ab ba ab ab aa ba bb aa aa ab bb aa
+06:33:04.069 [main] INFO de.learnlib.util.Experiment - Starting round 37
+06:33:04.069 [main] INFO de.learnlib.util.Experiment - Learning
+06:33:29.828 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:33:30.886 [Thread-36] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.33286131916286
+06:33:31.641 [Thread-36] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.571899605973115
+06:33:32.385 [main] INFO de.learnlib.util.Experiment - bb ab ba aa ba aa ab aa bb aa aa ba aa ba ba
+06:33:32.385 [main] INFO de.learnlib.util.Experiment - Starting round 38
+06:33:32.385 [main] INFO de.learnlib.util.Experiment - Learning
+06:33:46.625 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:33:47.299 [Thread-37] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.33286131916286
+06:33:47.299 [Thread-37] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 38.996806183208605
+06:33:47.300 [main] INFO de.learnlib.util.Experiment - bb ba aa ba bb ab aa ab ab bb aa aa aa ba bb
+06:33:47.300 [main] INFO de.learnlib.util.Experiment - Starting round 39
+06:33:47.300 [main] INFO de.learnlib.util.Experiment - Learning
+06:35:28.265 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:35:28.941 [Thread-38] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.33286131916286
+06:35:28.942 [main] INFO de.learnlib.util.Experiment - ba ab bb aa ba aa aa ba bb aa ab bb ba bb aa
+06:35:28.942 [main] INFO de.learnlib.util.Experiment - Starting round 40
+06:35:28.942 [main] INFO de.learnlib.util.Experiment - Learning
+06:35:43.166 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:35:43.922 [Thread-39] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.870432169148486
+06:35:43.922 [main] INFO de.learnlib.util.Experiment - aa ba ba ab bb ba ab bb ab ba ba ab bb ba ba
+06:35:43.922 [main] INFO de.learnlib.util.Experiment - Starting round 41
+06:35:43.923 [main] INFO de.learnlib.util.Experiment - Learning
+06:35:53.118 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:35:54.783 [Thread-40] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.33764670675767
+06:35:54.784 [main] INFO de.learnlib.util.Experiment - ab bb aa ba bb ab bb ab ab bb ab ab ba ba ba
+06:35:54.784 [main] INFO de.learnlib.util.Experiment - Starting round 42
+06:35:54.784 [main] INFO de.learnlib.util.Experiment - Learning
+06:36:27.601 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:36:29.340 [Thread-41] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:36:29.341 [main] INFO de.learnlib.util.Experiment - bb bb aa aa aa ab bb ba aa ab aa aa bb ba bb
+06:36:29.341 [main] INFO de.learnlib.util.Experiment - Starting round 43
+06:36:29.341 [main] INFO de.learnlib.util.Experiment - Learning
+06:36:38.737 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:36:39.452 [Thread-42] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 53.48149441166534
+06:36:39.453 [main] INFO de.learnlib.util.Experiment - ba aa ba ab ab bb aa bb aa ab aa bb ba aa aa
+06:36:39.453 [main] INFO de.learnlib.util.Experiment - Starting round 44
+06:36:39.453 [main] INFO de.learnlib.util.Experiment - Learning
+06:36:51.629 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:37:10.728 [Thread-43] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 5.002016961295013
+06:37:10.729 [main] INFO de.learnlib.util.Experiment - bb bb ba bb bb bb bb ba ba ba ba ba aa ba aa
+06:37:10.729 [main] INFO de.learnlib.util.Experiment - Starting round 45
+06:37:10.729 [main] INFO de.learnlib.util.Experiment - Learning
+06:38:22.139 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:38:29.925 [Thread-44] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.783257283907176
+06:38:29.926 [Thread-44] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.783257283907176
+06:38:29.926 [Thread-44] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.783257283907176
+06:38:31.172 [Thread-44] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.76251241806712
+06:38:33.664 [Thread-44] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.424008257247024
+06:38:33.665 [main] INFO de.learnlib.util.Experiment - bb bb aa aa aa ab bb ba aa ab aa aa bb ba bb
+06:38:33.665 [main] INFO de.learnlib.util.Experiment - Starting round 46
+06:38:33.665 [main] INFO de.learnlib.util.Experiment - Learning
+06:39:14.428 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:39:15.171 [Thread-45] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.783257283907176
+06:39:15.171 [Thread-45] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.783257283907176
+06:39:15.171 [Thread-45] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.783257283907176
+06:39:15.171 [main] INFO de.learnlib.util.Experiment - aa aa aa ba ba ab aa aa ba bb bb ba ba ba ab
+06:39:15.171 [main] INFO de.learnlib.util.Experiment - Starting round 47
+06:39:15.171 [main] INFO de.learnlib.util.Experiment - Learning
+06:39:39.667 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:40:05.552 [Thread-46] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.284332776692096
+06:40:05.553 [main] INFO de.learnlib.util.Experiment - bb aa ba aa bb ab ab ba ab bb ab aa ab bb ba
+06:40:05.553 [main] INFO de.learnlib.util.Experiment - Starting round 48
+06:40:05.553 [main] INFO de.learnlib.util.Experiment - Learning
+06:40:14.148 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:40:18.161 [Thread-47] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.304517008371604
+06:40:18.161 [Thread-47] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.304517008371604
+06:40:18.161 [Thread-47] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.304517008371604
+06:40:18.956 [Thread-47] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.35076397248824
+06:40:18.956 [Thread-47] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 41.35076397248824
+06:40:28.067 [main] INFO de.learnlib.util.Experiment - ba bb ab ba aa ab ba aa bb aa ab ba ba bb ba
+06:40:28.067 [main] INFO de.learnlib.util.Experiment - Starting round 49
+06:40:28.067 [main] INFO de.learnlib.util.Experiment - Learning
+06:40:34.830 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:40:35.706 [Thread-48] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.304517008371604
+06:40:35.706 [Thread-48] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.304517008371604
+06:40:35.706 [Thread-48] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.304517008371604
+06:40:35.707 [main] INFO de.learnlib.util.Experiment - bb aa ba ba bb ba ba bb ba bb ba ba ba aa bb
+06:40:35.707 [main] INFO de.learnlib.util.Experiment - Starting round 50
+06:40:35.707 [main] INFO de.learnlib.util.Experiment - Learning
+06:41:56.783 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:42:16.045 [Thread-49] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 13.484343115324421
+06:42:16.045 [main] INFO de.learnlib.util.Experiment - ba ba ba ba bb ba bb bb aa aa ba ba ba ba aa
+06:42:16.045 [main] INFO de.learnlib.util.Experiment - Starting round 51
+06:42:16.045 [main] INFO de.learnlib.util.Experiment - Learning
+06:43:04.106 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:43:13.627 [Thread-50] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 22.872322938153474
+06:43:13.627 [main] INFO de.learnlib.util.Experiment - ba bb ba ba ba aa ab aa bb ba ba ba bb ba ab
+06:43:13.627 [main] INFO de.learnlib.util.Experiment - Starting round 52
+06:43:13.627 [main] INFO de.learnlib.util.Experiment - Learning
+06:45:30.294 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:45:39.474 [Thread-51] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 37.8159271458284
+06:45:39.474 [main] INFO de.learnlib.util.Experiment - bb bb ab ab bb bb aa bb ba aa ab bb aa bb aa
+06:45:39.474 [main] INFO de.learnlib.util.Experiment - Starting round 53
+06:45:39.474 [main] INFO de.learnlib.util.Experiment - Learning
+06:45:47.780 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:45:57.484 [Thread-52] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 10.194834494796297
+06:45:57.486 [main] INFO de.learnlib.util.Experiment - ba ba ba ba bb bb bb aa ba ba ba ba ab aa bb
+06:45:57.486 [main] INFO de.learnlib.util.Experiment - Starting round 54
+06:45:57.486 [main] INFO de.learnlib.util.Experiment - Learning
+06:46:12.559 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:46:21.034 [Thread-53] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 29.941086571331255
+06:46:21.034 [main] INFO de.learnlib.util.Experiment - ba aa bb aa ba ba ba ab ab aa ab ab ba aa bb
+06:46:21.034 [main] INFO de.learnlib.util.Experiment - Starting round 55
+06:46:21.034 [main] INFO de.learnlib.util.Experiment - Learning
+06:46:59.312 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:47:04.283 [Thread-54] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: -0.08127689328448184
+06:47:04.284 [main] INFO de.learnlib.util.Experiment - bb ba ba ba ba ba ba bb ba ba aa ba ba aa ba
+06:47:04.284 [main] INFO de.learnlib.util.Experiment - Starting round 56
+06:47:04.284 [main] INFO de.learnlib.util.Experiment - Learning
+06:47:22.935 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:47:47.562 [Thread-55] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 13.079161160548523
+06:47:47.562 [main] INFO de.learnlib.util.Experiment - aa ab bb ba bb ba ba bb ba ba aa ba ab ba bb
+06:47:47.563 [main] INFO de.learnlib.util.Experiment - Starting round 57
+06:47:47.563 [main] INFO de.learnlib.util.Experiment - Learning
+06:47:54.299 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:48:11.410 [Thread-56] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 0.6595049891208049
+06:48:11.410 [main] INFO de.learnlib.util.Experiment - ba ba bb ba bb bb ba ba ba ba bb ab ab ab bb
+06:48:11.410 [main] INFO de.learnlib.util.Experiment - Starting round 58
+06:48:11.410 [main] INFO de.learnlib.util.Experiment - Learning
+06:48:52.632 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:54.093 [Thread-57] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.59832973972712
+06:48:56.356 [main] INFO de.learnlib.util.Experiment - ba ba ba ba ba bb ba ba ba ab bb ba bb ba ba
+06:48:56.356 [main] INFO de.learnlib.util.Experiment - Starting round 59
+06:48:56.356 [main] INFO de.learnlib.util.Experiment - Learning
+06:49:32.620 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:49:42.924 [Thread-58] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 8.1032455330717
+06:49:42.924 [main] INFO de.learnlib.util.Experiment - bb bb bb ba ba bb bb ba ba aa aa ba ba ba ba
+06:49:42.924 [main] INFO de.learnlib.util.Experiment - Starting round 60
+06:49:42.924 [main] INFO de.learnlib.util.Experiment - Learning
+06:50:01.752 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:50:06.665 [Thread-59] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 0.8718158689677722
+06:50:06.665 [main] INFO de.learnlib.util.Experiment - ba bb bb ba ba ba bb ba ba ba bb aa ab ab bb
+06:50:06.665 [main] INFO de.learnlib.util.Experiment - Starting round 61
+06:50:06.665 [main] INFO de.learnlib.util.Experiment - Learning
+06:50:32.909 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:50:36.600 [Thread-60] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 7.243039360853942
+06:50:36.600 [main] INFO de.learnlib.util.Experiment - ba bb aa ba ba bb ba bb ba ba ab ba ba ba ba
+06:50:36.600 [main] INFO de.learnlib.util.Experiment - Starting round 62
+06:50:36.600 [main] INFO de.learnlib.util.Experiment - Learning
+06:51:01.061 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:51:04.674 [Thread-61] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 2.802450224475436
+06:51:04.674 [main] INFO de.learnlib.util.Experiment - ba ba aa ba ba bb ba ba ba ba aa ba ba aa bb
+06:51:04.674 [main] INFO de.learnlib.util.Experiment - Starting round 63
+06:51:04.674 [main] INFO de.learnlib.util.Experiment - Learning
+06:51:33.557 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:51:35.353 [Thread-62] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 5.804109104065816
+06:51:35.353 [main] INFO de.learnlib.util.Experiment - ba bb aa ba bb bb ba ba ba ba bb ba ab aa ba
+06:51:35.353 [main] INFO de.learnlib.util.Experiment - Starting round 64
+06:51:35.353 [main] INFO de.learnlib.util.Experiment - Learning
+06:52:16.453 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:52:57.324 [Thread-63] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 5.675594136833723
+06:52:57.324 [main] INFO de.learnlib.util.Experiment - ba ba ba ba ba ab ba ba ba ba bb ba aa ab bb
+06:52:57.324 [main] INFO de.learnlib.util.Experiment - Starting round 65
+06:52:57.324 [main] INFO de.learnlib.util.Experiment - Learning
+06:54:45.487 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:54:49.256 [Thread-64] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: -3.2104334137359274
+06:54:49.256 [main] INFO de.learnlib.util.Experiment - bb ba ba ba ba ba ba ba ba ba bb bb aa ab bb
+06:54:49.256 [main] INFO de.learnlib.util.Experiment - Starting round 66
+06:54:49.256 [main] INFO de.learnlib.util.Experiment - Learning
+06:55:01.117 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:55:16.113 [Thread-65] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 67.94343902359928
+06:55:16.114 [main] INFO de.learnlib.util.Experiment - aa ba bb aa ab ab ab bb aa ab aa aa bb bb ab
+06:55:16.114 [main] INFO de.learnlib.util.Experiment - Starting round 67
+06:55:16.114 [main] INFO de.learnlib.util.Experiment - Learning
+06:55:55.231 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:56:03.394 [Thread-66] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.64139884375
+06:56:03.395 [main] INFO de.learnlib.util.Experiment - ba bb ab ba ab aa aa bb ab ba aa ba aa ba bb
+06:56:03.395 [main] INFO de.learnlib.util.Experiment - Starting round 68
+06:56:03.395 [main] INFO de.learnlib.util.Experiment - Learning
+06:56:22.170 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:56:28.177 [Thread-67] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.97208933941247
+06:56:28.177 [main] INFO de.learnlib.util.Experiment - ab ab ab ba ab ab aa bb ba ab aa ba aa aa ab
+06:56:28.177 [main] INFO de.learnlib.util.Experiment - Starting round 69
+06:56:28.177 [main] INFO de.learnlib.util.Experiment - Learning
+06:56:34.406 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:56:40.361 [Thread-68] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 48.351752112092484
+06:56:40.361 [main] INFO de.learnlib.util.Experiment - aa ab bb ab ab ba aa ab ba ba ab aa bb aa ba
+06:56:40.361 [main] INFO de.learnlib.util.Experiment - Starting round 70
+06:56:40.361 [main] INFO de.learnlib.util.Experiment - Learning
+06:56:46.911 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:57:00.029 [Thread-69] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 49.47241352409816
+06:57:00.030 [main] INFO de.learnlib.util.Experiment - ba ab bb bb ab ab ab aa bb bb ba aa ab aa aa
+06:57:00.030 [main] INFO de.learnlib.util.Experiment - Starting round 71
+06:57:00.030 [main] INFO de.learnlib.util.Experiment - Learning
+06:57:30.042 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:57:38.361 [Thread-70] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.197648332883546
+06:57:38.361 [main] INFO de.learnlib.util.Experiment - aa ab ab ab aa bb bb aa aa ba ba bb bb aa aa
+06:57:38.361 [main] INFO de.learnlib.util.Experiment - Starting round 72
+06:57:38.361 [main] INFO de.learnlib.util.Experiment - Learning
+06:57:46.847 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:57:52.026 [Thread-71] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.10588366761285
+06:57:52.026 [main] INFO de.learnlib.util.Experiment - aa ba ab ab ab bb bb ab aa ba aa ab aa ab bb
+06:57:52.026 [main] INFO de.learnlib.util.Experiment - Starting round 73
+06:57:52.026 [main] INFO de.learnlib.util.Experiment - Learning
+06:58:15.120 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:58:17.457 [Thread-72] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.42568819323215
+06:58:17.457 [main] INFO de.learnlib.util.Experiment - bb aa ab ab ab bb bb ab aa ba bb ab ba aa bb
+06:58:17.457 [main] INFO de.learnlib.util.Experiment - Starting round 74
+06:58:17.457 [main] INFO de.learnlib.util.Experiment - Learning
+06:58:23.685 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:58:28.088 [Thread-73] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 51.95014936923509
+06:58:28.088 [main] INFO de.learnlib.util.Experiment - bb aa aa ba ab ba ab ab aa ab bb bb aa aa bb
+06:58:28.088 [main] INFO de.learnlib.util.Experiment - Starting round 75
+06:58:28.088 [main] INFO de.learnlib.util.Experiment - Learning
+06:58:43.699 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+06:58:45.875 [Thread-74] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 39.59524431537854
+06:58:45.875 [main] INFO de.learnlib.util.Experiment - bb aa ba ba ab ba ab ab ab ab bb bb aa aa bb
+06:58:45.875 [main] INFO de.learnlib.util.Experiment - Starting round 76
+06:58:45.875 [main] INFO de.learnlib.util.Experiment - Learning
+07:00:08.271 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:00:14.168 [Thread-75] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 43.811450736788814
+07:00:14.169 [main] INFO de.learnlib.util.Experiment - bb aa ba bb ab aa ba ab ab ba bb ba aa aa ba
+07:00:14.169 [main] INFO de.learnlib.util.Experiment - Starting round 77
+07:00:14.169 [main] INFO de.learnlib.util.Experiment - Learning
+07:00:33.761 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:00:38.220 [Thread-76] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 57.17858882173398
+07:00:38.220 [main] INFO de.learnlib.util.Experiment - ab ab ab bb ba aa ba ab ab bb ab ba aa aa ba
+07:00:38.220 [main] INFO de.learnlib.util.Experiment - Starting round 78
+07:00:38.220 [main] INFO de.learnlib.util.Experiment - Learning
+07:00:47.110 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:00:52.262 [Thread-77] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.05932661040822
+07:00:52.263 [main] INFO de.learnlib.util.Experiment - ab ab ba bb ab aa ba ba ab bb ab ab aa ab ab
+07:00:52.263 [main] INFO de.learnlib.util.Experiment - Starting round 79
+07:00:52.263 [main] INFO de.learnlib.util.Experiment - Learning
+07:01:00.704 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:01:03.965 [Thread-78] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 56.645710415350734
+07:01:03.965 [main] INFO de.learnlib.util.Experiment - ab bb aa bb ab aa ba aa ab ba ab ab aa bb ab
+07:01:03.966 [main] INFO de.learnlib.util.Experiment - Starting round 80
+07:01:03.966 [main] INFO de.learnlib.util.Experiment - Learning
+07:01:09.945 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:01:14.038 [Thread-79] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 63.51596287438598
+07:01:14.039 [main] INFO de.learnlib.util.Experiment - bb aa aa aa ab aa ba aa ab aa ab ba ba bb bb
+07:01:14.039 [main] INFO de.learnlib.util.Experiment - Starting round 81
+07:01:14.039 [main] INFO de.learnlib.util.Experiment - Learning
+07:01:20.434 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:01:54.010 [Thread-80] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 58.437032373557734
+07:01:54.010 [main] INFO de.learnlib.util.Experiment - aa ba aa ab aa ab ab ba ba ab aa ba ab aa aa
+07:01:54.010 [main] INFO de.learnlib.util.Experiment - Starting round 82
+07:01:54.010 [main] INFO de.learnlib.util.Experiment - Learning
+07:02:16.726 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:02:19.598 [Thread-81] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 49.55812437972192
+07:02:19.598 [main] INFO de.learnlib.util.Experiment - aa ba aa ab ab ab bb ba bb ab aa ab ab ba aa
+07:02:19.598 [main] INFO de.learnlib.util.Experiment - Starting round 83
+07:02:19.598 [main] INFO de.learnlib.util.Experiment - Learning
+07:02:24.834 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:02:26.344 [Thread-82] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 79.74337209336944
+07:02:26.344 [main] INFO de.learnlib.util.Experiment - aa ba aa ab ab ab ab bb aa ab aa ab ab ba aa
+07:02:26.344 [main] INFO de.learnlib.util.Experiment - Starting round 84
+07:02:26.344 [main] INFO de.learnlib.util.Experiment - Learning
+07:02:31.638 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:02:38.405 [Thread-83] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 60.32960883633678
+07:02:38.405 [main] INFO de.learnlib.util.Experiment - ba aa ab bb aa ab ab bb aa ab ab ba ab bb ba
+07:02:38.405 [main] INFO de.learnlib.util.Experiment - Starting round 85
+07:02:38.405 [main] INFO de.learnlib.util.Experiment - Learning
+07:03:08.402 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:03:20.281 [Thread-84] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 42.724035661668154
+07:03:20.282 [main] INFO de.learnlib.util.Experiment - ba aa ba aa ab aa ab bb bb ba aa ab ab bb aa
+07:03:20.282 [main] INFO de.learnlib.util.Experiment - Starting round 86
+07:03:20.282 [main] INFO de.learnlib.util.Experiment - Learning
+07:03:33.612 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:03:36.360 [Thread-85] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.39349902983784
+07:03:36.360 [main] INFO de.learnlib.util.Experiment - ab bb bb aa ab aa ab ab ba ba aa ab ab bb aa
+07:03:36.360 [main] INFO de.learnlib.util.Experiment - Starting round 87
+07:03:36.360 [main] INFO de.learnlib.util.Experiment - Learning
+07:04:07.873 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:04:11.211 [Thread-86] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.46666506809812
+07:04:11.211 [main] INFO de.learnlib.util.Experiment - ab ab ba aa ab aa aa aa ba ba ba ab ab aa ba
+07:04:11.211 [main] INFO de.learnlib.util.Experiment - Starting round 88
+07:04:11.211 [main] INFO de.learnlib.util.Experiment - Learning
+07:04:43.636 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:04:47.621 [Thread-87] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 49.21623370212808
+07:04:47.621 [main] INFO de.learnlib.util.Experiment - ab ab ba aa aa ba ba ab ba aa bb ab ab aa ba
+07:04:47.621 [main] INFO de.learnlib.util.Experiment - Starting round 89
+07:04:47.621 [main] INFO de.learnlib.util.Experiment - Learning
+07:05:02.690 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:05:05.348 [Thread-88] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 50.723658337323116
+07:05:05.348 [main] INFO de.learnlib.util.Experiment - ab ab ba aa ba aa ba ab ba aa ba ab ab aa ba
+07:05:05.348 [main] INFO de.learnlib.util.Experiment - Starting round 90
+07:05:05.348 [main] INFO de.learnlib.util.Experiment - Learning
+07:05:31.425 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:05:47.144 [Thread-89] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 34.97863073980389
+07:05:47.145 [main] INFO de.learnlib.util.Experiment - bb aa ba aa aa ab ba aa ba ba ab ab bb ab ba
+07:05:47.145 [main] INFO de.learnlib.util.Experiment - Starting round 91
+07:05:47.145 [main] INFO de.learnlib.util.Experiment - Learning
+07:05:58.914 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:06:06.902 [Thread-90] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 44.188764726372455
+07:06:06.902 [main] INFO de.learnlib.util.Experiment - ab aa ba ba ba ab aa ab bb ba ab ab bb bb bb
+07:06:06.902 [main] INFO de.learnlib.util.Experiment - Starting round 92
+07:06:06.902 [main] INFO de.learnlib.util.Experiment - Learning
+07:07:08.901 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:07:15.241 [Thread-91] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 65.31335179693649
+07:07:15.241 [main] INFO de.learnlib.util.Experiment - ab aa ba aa bb ab bb ab aa aa ab ab ba ab ba
+07:07:15.241 [main] INFO de.learnlib.util.Experiment - Starting round 93
+07:07:15.241 [main] INFO de.learnlib.util.Experiment - Learning
+07:07:43.196 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:08:07.720 [Thread-92] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 45.61516504843334
+07:08:07.720 [main] INFO de.learnlib.util.Experiment - aa bb bb aa bb ba ab ab aa ba ba ba bb aa ba
+07:08:07.720 [main] INFO de.learnlib.util.Experiment - Starting round 94
+07:08:07.720 [main] INFO de.learnlib.util.Experiment - Learning
+07:08:30.343 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:08:52.506 [Thread-93] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 36.94210378964689
+07:08:52.507 [main] INFO de.learnlib.util.Experiment - ba aa ba ab bb ba bb aa aa aa ab ab aa aa bb
+07:08:52.507 [main] INFO de.learnlib.util.Experiment - Starting round 95
+07:08:52.507 [main] INFO de.learnlib.util.Experiment - Learning
+07:09:15.253 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:09:18.057 [Thread-94] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 46.73990232383606
+07:09:18.057 [main] INFO de.learnlib.util.Experiment - bb ab ba ab bb ba ab aa aa aa aa ab aa bb bb
+07:09:18.057 [main] INFO de.learnlib.util.Experiment - Starting round 96
+07:09:18.057 [main] INFO de.learnlib.util.Experiment - Learning
+07:09:41.290 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:09:54.140 [Thread-95] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 54.55361190773807
+07:09:54.140 [main] INFO de.learnlib.util.Experiment - ab ba ab aa ab ba ab ab ba bb ab ba aa aa ba
+07:09:54.140 [main] INFO de.learnlib.util.Experiment - Starting round 97
+07:09:54.140 [main] INFO de.learnlib.util.Experiment - Learning
+07:10:04.280 [main] INFO de.learnlib.util.Experiment - Searching for counterexample
+07:10:06.634 [Thread-96] INFO org.group_mmm.EQSearchProblem - CEX with Robustness: 55.07669913101449
+07:10:06.634 [main] INFO de.learnlib.util.Experiment - ab ba ab ab bb ba ab bb ab bb aa ba ba aa ba
+07:10:06.634 [main] INFO de.learnlib.util.Experiment - Starting round 98
+07:10:06.634 [main] INFO de.learnlib.util.Experiment - Learning

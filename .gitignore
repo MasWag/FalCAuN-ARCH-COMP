@@ -1,0 +1,25 @@
+# Simulink
+*.slxc
+*.mexa64
+*.mexmaci64
+*/slprj
+*.autosave
+
+# Emacs
+*~
+
+# Temporary files
+*.imap.tsv
+*.omap.tsv
+*.stl
+
+# Experiment results
+*/results/
+
+# Other logs
+*.log
+
+# Generated files by ROBODoc
+*.html
+*.css
+*.js
