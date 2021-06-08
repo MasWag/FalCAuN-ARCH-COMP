@@ -108,7 +108,7 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$output_mapper"
 #  - y3: none
 #  - y4: none
 #  - y5: none
-#  - y5 - y4: 8, 15, 40
+#  - y5 - y4: 15, 40
 #  - y2 - y1: 20
 #
 # SOURCE
