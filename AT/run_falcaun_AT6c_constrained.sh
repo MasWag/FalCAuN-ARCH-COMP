@@ -1,22 +1,25 @@
 #!/bin/sh -u
-#****h* transmission/run_falcaun_AT6_constrained
+#****h* AT/run_falcaun_AT6c_constrained
 # NAME
-#  run_falcaun_AT6_constrained.sh
+#  run_falcaun_AT6c_constrained.sh
 # DESCRIPTION
-#  Script to falsify the AT6 formulas by FalCAuN
+#  Script to falsify the AT6c formula by FalCAuN with discontinuity only possible every 5 seconds, i.e., SIGNAL_STEP=5.0
 # AUTHOR
 #  Masaki Waga
 # HISTORY
 #   - 2021/05/05: initial version
+# COPYRIGHT
+#  Copyright (c) 2021 Masaki Waga
+#  Released under the MIT license
+#  https://opensource.org/licenses/mit-license.php
 #
 # PORTABILITY
 #  This script asuses the following:
 #  - The environment variable MATLAB_HOME is set to the root directory of MATLAB, e.g., /Applications/MATLAB_R2020b.app/ or /usr/local/MATLAB/R2020b.
-#  - FalCAuN is installed at ~/Codes/FalCAuN.
+#  - FalCAuN is installed at ${HOME}/FalCAuN.
 #
 # USAGE
-#  ./run_falcaun_AT6_constrained.sh
-#  ./run_falcaun_AT6_constrained.sh [FROM] [TO]
+#  ./run_falcaun_AT1_constrained.sh [from to]
 # NOTES
 #  By default, this script runs FalCAuN for 50 times. When you want to run for a different interval, specify the range by the first and the second arguments.
 #
@@ -26,7 +29,7 @@
 cd "$(dirname "$0")" || exit 0
 
 
-#****if* run_falcaun_AT6_constrained/configuration
+#****if* run_falcaun_AT6c_constrained/configuration
 # DESCRIPTION
 #
 # SOURCE
@@ -41,30 +44,29 @@ trap atexit EXIT
 trap 'rc=$?; trap - EXIT; atexit; exit $?' INT PIPE TERM
 #******
 
-#****d* run_falcaun_AT6_constrained/configuration
+#****d* run_falcaun_AT6c_constrained/configuration
 # DESCRIPTION
 #  Define the constants for the execution
 # PORTABILITY
 #  We assume that FalCAuN is installed at ~/Codes/FalCAuN. Please modify the following definition if FalCAuN is installed somewhere else.
 # SOURCE
 #
+readonly FALCAUN_PATH=${HOME}/FalCAuN/
+
 readonly LENGTH=10
 readonly SIGNAL_STEP=5.0
 readonly POPULATION_SIZE=50
 readonly CROSSOVER_PROB=0.9
 readonly MUTATION_PROB=0.01
-readonly TIMEOUT=$((5 * 60)) #$((240 * 60)) # 240 min.
+readonly TIMEOUT=$((10 * 60)) # 10 min.
 readonly SELECTION_KIND=Tournament
-readonly MAX_TEST=50000
+readonly MAX_TEST=1000
 readonly KIND=ga
-
-readonly FALCAUN_PATH=~/Codes/FalCAuN/
-#readonly FALCAUN_PATH=~/FalCAuN/
 #******
 
-input_mapper=$(mktemp /tmp/AT.XXXXXX.imap.tsv)
+input_mapper=$(mktemp /tmp/AT.imap.tsv.XXXXXX)
 cat <<EOF | sed 's/#.*$//;/^$/d;' > "$input_mapper"
-#****d* run_falcaun_AT6_constrained/input_mapper
+#****d* run_falcaun_AT6c_constrained/input_mapper
 # DESCRIPTION
 #  Define the input mapper
 #
@@ -79,9 +81,19 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$input_mapper"
 #******
 EOF
 
-output_mapper=$(mktemp /tmp/AT.XXXXXX.omap.tsv)
+#****d* run_falcaun_AT6c_constrained/signal_name
+# DESCRIPTION
+#  Name the signal
+#
+# SOURCE
+#
+readonly speed='signal(0)'
+readonly RPM='signal(1)'
+#******
+
+output_mapper=$(mktemp /tmp/AT.omap.tsv.XXXXXX)
 cat <<EOF | sed 's/#.*$//;/^$/d;' > "$output_mapper"
-#****d* run_falcaun_AT6_constrained/output_mapper
+#****d* run_falcaun_AT6c_constrained/output_mapper
 # DESCRIPTION
 #  Define the output mapper
 #
@@ -92,15 +104,15 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$output_mapper"
 #
 # SOURCE
 #
-35	50	65	inf
+65	inf
 3000	inf
 inf
 #******
 EOF
 
-stl_file=$(mktemp /tmp/AT.XXXXXX.stl)
+stl_file=$(mktemp /tmp/AT.stl.XXXXXX)
 cat <<EOF | sed 's/#.*$//;/^$/d;' > "$stl_file"
-#****d* run_falcaun_AT6_constrained/stl_file
+#****d* run_falcaun_AT6c_constrained/stl_file
 # DESCRIPTION
 #  Define the STL formulas to be falsified
 #
@@ -109,7 +121,7 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$stl_file"
 #
 # SOURCE
 #
-(alw_[0, 6] (signal(1) < 3000.0)) -> (alw_[0, 4] (signal(0) < 65.0))
+(alw_[0, 6] ($RPM < 3000.0)) -> (alw_[0, 4] ($speed < 65.0))
 #******
 EOF
 
@@ -118,7 +130,7 @@ to=${2:-50}
 
 mkdir -p results
 
-#****f* run_falcaun_AT6_constrained/execute
+#****f* run_falcaun_AT6c_constrained/execute
 # DESCRIPTION
 #  Execute FalCAuN for falsification
 # OUTPUT
@@ -129,7 +141,7 @@ mkdir -p results
 #
 # SOURCE
 for t in $(seq "$from" "$to"); do
-    prefix="AT6_constrained_$t"
+    prefix="AT6c_constrained_$t"
     rm -f Autotrans_shift.mdl.autosave
 
     "${FALCAUN_PATH}falcaun" \
@@ -153,7 +165,7 @@ for t in $(seq "$from" "$to"); do
 done
 #******
 
-#****** run_falcaun_AT6_constrained/references
+#****** run_falcaun_AT6c_constrained/references
 # SEE ALSO
 # - [ARCH-COMP'20]: Ernst, Gidon, et al. "ARCH-COMP 2020 Category Report: Falsification." EPiC Series in Computing (2020).
 #******
