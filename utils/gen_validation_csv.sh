@@ -51,9 +51,13 @@ while [ $# -gt 0 ]; do
                                 ORS = "; "
                                 printf "["
                             }
+                            NR == 1 { ## Use the first input twice
+                                $1 = $1 # change the separators
+                                print 0, $0
+                            }
                             !/^[[:space:]]*$/ {
                                 $1 = $1 # change the separators
-                                print step_time * (NR - 1), $0
+                                print step_time * NR, $0
                             }' |
                     sed 's/; $/]/;')
     else
