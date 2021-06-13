@@ -8,6 +8,7 @@
 #  Masaki Waga
 # HISTORY
 #   - 2021/05/18: initial version
+#   - 2021/06/13: updated for FalCAuN v0.4
 # COPYRIGHT
 #  Copyright (c) 2021 Masaki Waga
 #  Released under the MIT license
@@ -38,28 +39,10 @@ while [ $# -gt 0 ]; do
     # Parse the falsification result
     simulations=$(awk '/Simulink Execution:/{print $3}' "$input_path")
     time=$(awk '/BBC Elapsed Time/{print $4}' "$input_path")
-    step_time=$(awk '/Step time:/{print $3}' "$input_path")
     if grep 'The following properties are falsified' "$input_path" > /dev/null 2>&1; then
         falsified=yes
         input=$(grep -F 'Concrete Input' "$input_path" | # extract the line
-                    sed 's/.*: //;' | # Remove the key
-                    tr -d '[ ' | # Remove useless characters
-                    awk -v step_time="$step_time" 'BEGIN {
-                                FS = ","
-                                RS = "]"
-                                OFS = " "
-                                ORS = "; "
-                                printf "["
-                            }
-                            NR == 1 { ## Use the first input twice
-                                $1 = $1 # change the separators
-                                print 0, $0
-                            }
-                            !/^[[:space:]]*$/ {
-                                $1 = $1 # change the separators
-                                print step_time * NR, $0
-                            }' |
-                    sed 's/; $/]/;')
+                    sed 's/.*: //;') # Remove the key
     else
         falsified=no
         input=""
