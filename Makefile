@@ -25,7 +25,7 @@
 EXPERIMENT_NUMBERS := $(shell seq 1 50)
 AT_BENCHMARKS := AT1 AT2 AT6a AT6b AT6c AT1_constrained AT2_constrained AT6c_constrained 
 CC_BENCHMARKS := CC1 CC2 CC3
-SC_BENCHMARKS := SC
+SC_BENCHMARKS := SCa
 BENCHMARKS := $(AT_BENCHMARKS)
 #******
 
