@@ -84,10 +84,16 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$output_mapper"
 #  Define the output mapper
 #
 #  We distinguish the output by the following threshold:
+#  - T: none
+#  - Fcw: none
+#  - Q: none
 #  - pressure: 87 or 87.5
 #
 # SOURCE
 #
+inf
+inf
+inf
 87	87.5	inf
 #******
 EOF
