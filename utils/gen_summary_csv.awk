@@ -138,10 +138,10 @@ END {
         mean_simulation_time = sum_simulation_time / num_falsified
 
         # Compute sdev
-        sdev_total_simulation = (sq_sum_total_simulation / num_falsified) - (mean_total_simulation * mean_total_simulation)
-        sdev_total_time = (sq_sum_total_time / num_falsified) - (mean_total_time * mean_total_time)
-        sdev_eq_simulation = (sq_sum_eq_simulation / num_falsified) - (mean_eq_simulation * mean_eq_simulation)
-        sdev_simulation_time = (sq_sum_simulation_time / num_falsified) - (mean_simulation_time * mean_simulation_time)
+        sdev_total_simulation = sqrt((sq_sum_total_simulation / num_falsified) - (mean_total_simulation * mean_total_simulation))
+        sdev_total_time = sqrt((sq_sum_total_time / num_falsified) - (mean_total_time * mean_total_time))
+        sdev_eq_simulation = sqrt((sq_sum_eq_simulation / num_falsified) - (mean_eq_simulation * mean_eq_simulation))
+        sdev_simulation_time = sqrt((sq_sum_simulation_time / num_falsified) - (mean_simulation_time * mean_simulation_time))
     } else {
         # When we failed to falsify, we let everything 0.
         mean_total_simulation = 0

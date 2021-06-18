@@ -29,9 +29,6 @@ SC_BENCHMARKS := SC
 BENCHMARKS := $(AT_BENCHMARKS)
 #******
 
-test: /tmp/AT/results/result-AT1_1.csv /tmp/AT/results/result-AT1_2.csv
-	@echo This rule must be removed before deployment.
-
 #****h* Makefile/all
 # DESCRIPTION
 #  It defines the goal of this Makefile: to generate summary.csv representing the summary of all the experiment results.
@@ -47,6 +44,9 @@ all: summary.csv
 #
 summary.csv: $(AT_BENCHMARKS:%=/tmp/AT/results/summary-%.csv) $(CC_BENCHMARKS:%=/tmp/CC/results/summary-%.csv) $(SC_BENCHMARKS:%=/tmp/SC/results/summary-%.csv)
 	awk 'FNR > 1 || NR == 1' $^ > $@
+
+summary-eq.csv: $(AT_BENCHMARKS:%=/tmp/AT/results/summary-eq-%.csv) $(CC_BENCHMARKS:%=/tmp/CC/results/summary-eq-%.csv) $(SC_BENCHMARKS:%=/tmp/SC/results/summary-eq-%.csv)
+	awk 'FNR > 1 || NR == 1' $^ > $@
 #******
 
 #****h* Makefile/gen_summary_csv
@@ -57,6 +57,22 @@ summary.csv: $(AT_BENCHMARKS:%=/tmp/AT/results/summary-%.csv) $(CC_BENCHMARKS:%=
 summary-%.csv: ./utils/gen_summary_csv.awk $(foreach i,$(EXPERIMENT_NUMBERS), result-%_$i.csv)
 	chmod +x $<
 	$^ > $@
+
+summary-eq-%.csv: ./utils/gen_summary_eq_limit_csv.awk $(foreach i,$(EXPERIMENT_NUMBERS), result-%_$i.csv)
+	chmod +x $<
+	$^ > $@
+#******
+
+
+#****h* Makefile/gen_result_csv
+# DESCRIPTION
+#  It generates a CSV file for each experiment result.
+# SOURCE
+#
+/tmp/%.csv: %.txt ./utils/gen_result_csv.sh
+	mkdir -p $(dir $@)
+	./utils/gen_result_csv.sh $< > $@
+#******
 #******
 
 

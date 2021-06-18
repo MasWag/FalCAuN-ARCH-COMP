@@ -33,7 +33,7 @@ while [ $# -gt 0 ]; do
 
     # Parse system and property from the filename
     system=$(dirname "$input_dirname" | xargs basename)
-    property=$(echo "$input_filename" | sed 's/result-//;s/_.*//;')
+    property=$(echo "$input_filename" | sed 's/result-//;s/_[0-9]*.\.txt//;')
 
     # Parse the falsification result
     total_simulations=$(awk '/Simulink Execution:/{print $3}' "$input_path")
