@@ -1,0 +1,16 @@
+# Lint of awk scripts with GNU awk
+name: gawk
+
+on:
+  push:
+    paths:
+      - '**.awk'
+
+jobs:
+  gawk:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Check scripts with shellcheck
+      run: find . -name '*.awk' -exec gawk --source 'BEGIN{exit} END{exit 1}' --lint --posix --file {} \;
