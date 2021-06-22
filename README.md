@@ -46,8 +46,18 @@ Encoding of `always_[1.0, 37.0]` makes the LTL formula too large (same as AFC).
 
 ### CC (Chasing Cars)
 
-FalCAuN can falsify CC1, CC2, and CC3. However, CC4 and CC5 are infeasible because the STL formulas are encoded to huge LTL formulas (same reason as AFC).
+FalCAuN can falsify CC1, CC2, and CC3.
+However, CC4 and CC5 are infeasible because the STL formulas are encoded to huge LTL formulas (same reason as AFC).
 
 ### F16 (f16-gcas)
 
 FalCAuN cannot handle F16 benchmark because it is not a pure Simulink model but requires quite a lot of wrapper in MATLAB, which is currently not supported.
+
+
+How to deploy
+-------------
+
+We can deploy the scripts in this repository to the directory of ARCH-COMP under the following assumptions.
+
+- The 
+

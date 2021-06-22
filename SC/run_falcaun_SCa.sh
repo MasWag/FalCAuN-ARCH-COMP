@@ -97,6 +97,16 @@ inf
 #******
 EOF
 
+#****d* run_falcaun_SCa/signal_definition
+# DESCRIPTION
+#  Name each output signal
+#
+# SOURCE
+#
+readonly pressure='signal(3)'
+#******
+
+
 stl_file=$(mktemp /tmp/SC.XXXXXX.stl)
 cat <<EOF | sed 's/#.*$//;/^$/d;' > "$stl_file"
 #****d* run_falcaun_SC/stl_file
@@ -105,7 +115,7 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$stl_file"
 #
 # SOURCE
 #
-alw_[30, 35] (signal(0) > 87 && signal(0) < 87.5)
+alw_[30, 35] ($pressure > 87 && $pressure < 87.5)
 #******
 EOF
 

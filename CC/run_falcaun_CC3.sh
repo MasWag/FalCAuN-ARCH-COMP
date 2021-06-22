@@ -107,7 +107,7 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$output_mapper"
 #  - y3: none
 #  - y4: none
 #  - y5: none
-#  - y5 - y4: 8, 15, 40
+#  - y5 - y4: 15, 40
 #  - y2 - y1: 20
 #
 # SOURCE
@@ -135,8 +135,6 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$stl_file"
 #
 # SOURCE
 #
-alw_[0, 10] (signal(5) < 40)
-alw_[0, 7] (ev_[0,3] (signal(5) > 15))
 alw_[0, 8] ((alw_[0,2] (signal(6) < 20)) || (ev_[0, 2] (signal(5) > 40)))
 #******
 EOF
