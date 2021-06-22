@@ -17,7 +17,7 @@
 # PORTABILITY
 #  This script asuses the following:
 #  - The environment variable MATLAB_HOME is set to the root directory of MATLAB, e.g., /Applications/MATLAB_R2020b.app/ or /usr/local/MATLAB/R2020b.
-#  - FalCAuN is installed at ${HOME}/Codes/FalCAuN.
+#  - FalCAuN is installed at ${HOME}/FalCAuN.
 #
 # USAGE
 #  ./run_falcaun_AT6.sh [from to]
@@ -50,7 +50,7 @@ trap 'rc=$?; trap - EXIT; atexit; exit $?' INT PIPE TERM
 # DESCRIPTION
 #  Define the constants for the execution
 # PORTABILITY
-#  We assume that FalCAuN is installed at ${HOME}/Codes/FalCAuN. Please modify the following definition if FalCAuN is installed somewhere else.
+#  We assume that FalCAuN is installed at ${HOME}/FalCAuN. Please modify the following definition if FalCAuN is installed somewhere else.
 # SOURCE
 #
 readonly LENGTH=15
@@ -63,8 +63,7 @@ readonly SELECTION_KIND=Tournament
 readonly MAX_TEST=50000
 readonly KIND=ga
 
-readonly FALCAUN_PATH=${HOME}/Codes/FalCAuN/
-#readonly FALCAUN_PATH=${HOME}/FalCAuN/
+readonly FALCAUN_PATH=${HOME}/FalCAuN/
 #******
 
 input_mapper=$(mktemp /tmp/AT.XXXXXX.imap.tsv)
