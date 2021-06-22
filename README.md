@@ -57,7 +57,11 @@ FalCAuN cannot handle F16 benchmark because it is not a pure Simulink model but 
 How to deploy
 -------------
 
-We can deploy the scripts in this repository to the directory of ARCH-COMP under the following assumptions.
+We can deploy the scripts in this repository to the directory of ARCH-COMP.
+We assume that the repository of ARCH-COMP exists at `../Codes/ARCH-COMP`.
 
-- The 
+The usage is as follows.
 
+```sh
+make -C utils/ -f Makefile.deploy
+```

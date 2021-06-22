@@ -1,0 +1,15 @@
+AT_BENCHMARKS := AT1 AT2 AT6a AT6b AT6c AT1_constrained AT2_constrained AT6c_constrained 
+CC_BENCHMARKS := CC1 CC2 CC3
+SC_BENCHMARKS := SCa
+FILES := $(AT_BENCHMARKS:%=AT/run_falcaun_%.sh) $(CC_BENCHMARKS:%=CC/run_falcaun_%.sh) $(SC_BENCHMARKS:%=SC/run_falcaun_%.sh)
+PRODUCTS := $(FILES:%=../../Codes/ARCH-COMP/2021/FALS/FalCAuN/%)
+
+all: $(PRODUCTS)
+
+../../Codes/ARCH-COMP/2021/FALS/FalCAuN/%: /tmp/% Makefile.deploy
+	mv $< $@
+	chmod 755 $@
+
+/tmp/%: ../% patch
+	mkdir -p $(dir $@)
+	patch $< < ./patch -o $@

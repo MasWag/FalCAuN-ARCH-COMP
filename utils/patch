@@ -1,0 +1,11 @@
+19d18
+< #  - FalCAuN is installed at ${HOME}/FalCAuN.
+50,51c49
+< # PORTABILITY
+< #  We assume that FalCAuN is installed at ${HOME}/FalCAuN. Please modify the following definition if FalCAuN is installed somewhere else.
+---
+> #
+64c62
+< readonly FALCAUN_PATH=${HOME}/FalCAuN/
+---
+> readonly FALCAUN_PATH="../"
