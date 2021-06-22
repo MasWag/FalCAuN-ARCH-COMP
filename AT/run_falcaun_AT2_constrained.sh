@@ -49,7 +49,7 @@ trap 'rc=$?; trap - EXIT; atexit; exit $?' INT PIPE TERM
 # DESCRIPTION
 #  Define the constants for the execution
 # PORTABILITY
-#  We assume that FalCAuN is installed at ~/Codes/FalCAuN. Please modify the following definition if FalCAuN is installed somewhere else.
+#  We assume that FalCAuN is installed at ${HOME}/Codes/FalCAuN. Please modify the following definition if FalCAuN is installed somewhere else.
 # SOURCE
 #
 readonly FALCAUN_PATH=${HOME}/FalCAuN/
