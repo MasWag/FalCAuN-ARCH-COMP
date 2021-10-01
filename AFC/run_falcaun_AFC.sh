@@ -79,20 +79,6 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$input_mapper"
 #******
 EOF
 
-signal_mapper=$(mktemp /tmp/AFC.XXXXXX.sigmap)
-cat <<EOF | sed 's/#.*$//;/^$/d;' > "$signal_mapper"
-#****d* run_falcaun_AFC/signal_mapper
-# DESCRIPTION
-#  Define the signal mapper
-# NOTES
-#  In the paper, signal are 1-origin while in FalCAuN, signals are 0-origin.
-#
-# SOURCE
-#
-input(0)
-#******
-EOF
-
 output_mapper=$(mktemp /tmp/AFC.XXXXXX.omap.tsv)
 cat <<EOF | sed 's/#.*$//;/^$/d;' > "$output_mapper"
 #****d* run_falcaun_AFC/output_mapper
@@ -108,9 +94,20 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$output_mapper"
 #
 0.007	0.008	inf
 0	1	inf
-8.8	40.0	61.2	81.2	inf
 #******
 EOF
+
+#****d* run_falcaun_AFC/signal_definition
+# DESCRIPTION
+#  Name each output signal
+#
+# SOURCE
+#
+readonly mu='signal(0)'
+readonly theta='input(0)'
+readonly beta=0.008
+readonly gamma=0.007
+#******
 
 stl_file=$(mktemp /tmp/AFC.XXXXXX.stl)
 cat <<EOF | sed 's/#.*$//;/^$/d;' > "$stl_file"
@@ -123,9 +120,9 @@ cat <<EOF | sed 's/#.*$//;/^$/d;' > "$stl_file"
 #
 # SOURCE
 #
-alw_[11, 50] ((((signal(2) < 8.8) && X(signal(2) > 40.0)) || ((signal(2) > 40.0) && X(signal(2) < 8.8))) -> alw_[1,5] ((signal(0) < 0.008) && (signal(0) > -0.008)))
-alw ((0 <= signal(2)) && (signal(2) < 61.2)) -> alw_[11, 50] ((signal(0) < 0.007) && (signal(0) > -0.007))
-alw ((61.2 <= signal(2)) && (signal(2) <= 81.2)) -> alw_[11, 50] ((signal(0) < 0.007) && (signal(0) > -0.007))
+alw_[11, 50] (((($theta < 8.8) && X($theta > 40.0)) || (($theta > 40.0) && X($theta < 8.8))) -> alw_[1,5] (($mu < $beta) && ($mu > -$beta)))
+alw (($theta > 0) && ($theta < 61.2)) -> alw_[11, 50] (($mu < $gamma) && ($mu > -$gamma))
+alw (($theta > 61.2) && ($theta < 81.2)) -> alw_[11, 50] (($mu < $gamma) && ($mu > -$gamma))
 #******
 EOF
 
@@ -152,7 +149,6 @@ for t in $(seq "$from" "$to"); do
                    --stl-file="$stl_file" \
                    --input-mapper="$input_mapper" \
                    --output-mapper="$output_mapper" \
-                   --signal-mapper="$signal_mapper" \
                    --signal-length=$LENGTH\
                    --step-time=$SIGNAL_STEP\
                    --equiv=$KIND\
