@@ -30,7 +30,7 @@ BEGIN {
     FS = ","
     OFS = ","
     # Constants
-    MAX_TOTAL_SIMULATION = 300
+    MAX_TOTAL_SIMULATION = 1000000
     # Print the header
     print "\"system\",\"property\",\"mean total simulations\",\"sdev total simulations\",\"min total simulations\",\"max total simulations\",\"mean total time\",\"sdev total time\",\"min total time\",\"max total time\",\"mean simulations for equivalence testing\",\"sdev simulations for equivalence testing\",\"min simulations for equivalence testing\",\"max simulations for equivalence testing\",\"mean simulation time\",\"sdev simulation time\",\"min simulation time\",\"max simulation time\",\"num falsified\""
 }
@@ -68,12 +68,14 @@ system_name != current_system_name || property != current_property {
     total_time = $4
     eq_simulation = $5
     simulation_time = $6
+    falsified = $7
     
     # remove quotation
     gsub("\"", "", total_simulation)
     gsub("\"", "", total_time)
     gsub("\"", "", eq_simulation)
     gsub("\"", "", simulation_time)
+    gsub("\"", "", falsified)
 
     # cast to number
     total_simulation *= 1.0
@@ -83,7 +85,7 @@ system_name != current_system_name || property != current_property {
 }
 
 # Ignore the experiments with too many simulations (and failed experiments)
-total_simulation > MAX_TOTAL_SIMULATION || total_simulation == 0 {
+total_simulation > MAX_TOTAL_SIMULATION || total_simulation == 0 || falsified == "no" {
     next
 }
 

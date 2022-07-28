@@ -36,10 +36,10 @@ while [ $# -gt 0 ]; do
     property=$(echo "$input_filename" | sed 's/result-//;s/_[0-9]*.\.txt//;')
 
     # Parse the falsification result
-    total_simulations=$(awk '/Simulink Execution:/{print $3}' "$input_path")
-    total_time=$(awk '/BBC Elapsed Time/{print $4}' "$input_path")
-    eq_simulations=$(awk '/Simulink Execution for Equivalence Testing:/{print $6}' "$input_path")
-    simulation_time=$(awk '/Simulink Execution Time/{print $4}' "$input_path")
+    total_simulations=$(awk '/Simulink Execution:/{print $8}/\n/' "$input_path")
+    total_time=$(awk '/BBC Elapsed Time/{print $9}' "$input_path")
+    eq_simulations=$(awk '/Simulink Execution for Equivalence Testing:/{print $11}' "$input_path")
+    simulation_time=$(awk '/Simulink Execution Time/{print $9}' "$input_path")
     if grep 'The following properties are falsified' "$input_path" > /dev/null 2>&1; then
         falsified=yes
         input=$(grep -F 'Concrete Input' "$input_path" | # extract the line
