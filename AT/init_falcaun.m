@@ -5,6 +5,7 @@
 %% Load the AT model
 mdl = 'Autotrans_shift';
 load_system(mdl);
+init_transmission;
 
 %% References
 % * [Hoxha et al., ARCH@CPSWeek 2014]: *Benchmarks for Temporal

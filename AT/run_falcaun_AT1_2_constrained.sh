@@ -47,7 +47,7 @@ trap 'rc=$?; trap - EXIT; atexit; exit $?' INT PIPE TERM
 #  We assume that FalCAuN is installed at ${HOME}/FalCAuN. Please modify the following definition if FalCAuN is installed somewhere else.
 # SOURCE
 #
-readonly LENGTH=10
+readonly LENGTH=6
 readonly SIGNAL_STEP=5.0
 readonly POPULATION_SIZE=50
 readonly CROSSOVER_PROB=0.9
