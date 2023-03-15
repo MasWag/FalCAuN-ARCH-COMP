@@ -1,6 +1,8 @@
 Steam Condenser with RNN controller
 ===================================
 
+NOTE: requires the deep learning toolbox
+
 Files
 -----
 
