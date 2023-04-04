@@ -65,7 +65,7 @@ readonly SELECTION_KIND=Tournament
 readonly MAX_TEST=50000
 readonly KIND=GA
 
-readonly FALCAUN_PATH=${HOME}/FalCAuN/
+readonly FALCAUN_PATH="${HOME}"/FalCAuN/
 #******
 
 input_mapper=$(mktemp /tmp/CC_new.imap.tsv.XXXXXX)

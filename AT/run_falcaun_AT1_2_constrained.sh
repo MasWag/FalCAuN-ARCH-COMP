@@ -58,7 +58,7 @@ readonly MAX_TEST=50000
 readonly KIND=GA
 #readonly KIND=WP
 
-readonly FALCAUN_PATH=${HOME}/FalCAuN/
+readonly FALCAUN_PATH="${HOME}"/FalCAuN/
 #******
 
 input_mapper=$(mktemp /tmp/AT.XXXXXX.imap.tsv)
