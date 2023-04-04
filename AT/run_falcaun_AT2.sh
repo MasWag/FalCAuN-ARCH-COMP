@@ -144,6 +144,8 @@ mkdir -p results
 for t in $(seq "$from" "$to"); do
     prefix="AT2_$t"
     rm -f Autotrans_shift.mdl.autosave
+    # Kill MathWorks Service Host if it is running
+    killall MathWorksServiceHost
 
     "${FALCAUN_PATH}falcaun" \
                    --stl-file="$stl_file" \

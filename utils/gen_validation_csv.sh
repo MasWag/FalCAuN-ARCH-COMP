@@ -9,6 +9,8 @@
 # HISTORY
 #   - 2021/05/18: initial version
 #   - 2021/06/13: updated for FalCAuN v0.4
+#   - 2023/03/15: updated for FalCAuN v0.4
+#   - 2023/04/04: added the column simulation_time for ARCH-COMP 2023
 # COPYRIGHT
 #  Copyright (c) 2021 Masaki Waga
 #  Released under the MIT license
@@ -25,7 +27,7 @@ if [ $# -le 0 ]; then
 fi
 
 # Print the header
-printf '"system","property","simulations","time","falsified","input"\n'
+printf '"system","property","simulations","time","simulation_time","falsified","input"\n'
 
 while [ $# -gt 0 ]; do
     input_path=$1
@@ -37,8 +39,9 @@ while [ $# -gt 0 ]; do
     property=$(echo "$input_filename" | sed 's/result-//;s/_.*//;')
 
     # Parse the falsification result
-    simulations=$(awk '/Simulink Execution:/{print $3}' "$input_path")
-    time=$(awk '/BBC Elapsed Time/{print $4}' "$input_path")
+    simulations=$(awk '/Simulink Execution:/{print $8}' "$input_path")
+    time=$(awk '/BBC Elapsed Time/{print $9}' "$input_path")
+    simulation_time=$(awk '/Simulink Execution Time/{print $9}' "$input_path")
     if grep 'The following properties are falsified' "$input_path" > /dev/null 2>&1; then
         falsified=yes
         input=$(grep -F 'Concrete Input' "$input_path" | # extract the line
@@ -48,6 +51,6 @@ while [ $# -gt 0 ]; do
         input=""
     fi
     # Print each row
-    printf '"%s","%s","%s","%s","%s","%s"\n' "$system" "$property" "$simulations" "$time" "$falsified" "$input"
+    printf '"%s","%s","%s","%s","%s","%s","%s"\n' "$system" "$property" "$simulations" "$time" "$simulation_time" "$falsified" "$input"
     shift
 done
