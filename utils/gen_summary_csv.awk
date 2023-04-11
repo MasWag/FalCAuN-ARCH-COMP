@@ -32,7 +32,7 @@ BEGIN {
     # Constants
     MAX_TOTAL_SIMULATION = 1500
     # Print the header
-    print "\"system\",\"property\",\"mean total simulations\",\"sdev total simulations\",\"min total simulations\",\"max total simulations\",\"mean total time\",\"sdev total time\",\"min total time\",\"max total time\",\"mean simulations for equivalence testing\",\"sdev simulations for equivalence testing\",\"min simulations for equivalence testing\",\"max simulations for equivalence testing\",\"mean simulation time\",\"sdev simulation time\",\"min simulation time\",\"max simulation time\",\"num falsified\""
+    print "\"system\",\"property\",\"mean total simulations\",\"median total simulations\",\"sdev total simulations\",\"min total simulations\",\"max total simulations\",\"mean total time\",\"sdev total time\",\"min total time\",\"max total time\",\"mean simulations for equivalence testing\",\"sdev simulations for equivalence testing\",\"min simulations for equivalence testing\",\"max simulations for equivalence testing\",\"mean simulation time\",\"sdev simulation time\",\"min simulation time\",\"max simulation time\",\"num falsified\""
 }
 
 # remove the header
@@ -129,6 +129,16 @@ simulation_time > max_simulation_time {
     sq_sum_total_time += total_time * total_time
     sq_sum_eq_simulation += eq_simulation * eq_simulation
     sq_sum_simulation_time += simulation_time * simulation_time
+    # List
+    total_simulation_list[NR] = total_simulation
+}
+
+function alen(a, i, count) {
+    count = 0
+    for(i in a) {
+        count += 1
+    }
+    return count
 }
 
 END {
@@ -144,6 +154,14 @@ END {
         sdev_total_time = sqrt((sq_sum_total_time / num_falsified) - (mean_total_time * mean_total_time))
         sdev_eq_simulation = sqrt((sq_sum_eq_simulation / num_falsified) - (mean_eq_simulation * mean_eq_simulation))
         sdev_simulation_time = sqrt((sq_sum_simulation_time / num_falsified) - (mean_simulation_time * mean_simulation_time))
+
+        # Compute Median
+        asort(total_simulation_list, total_simulation_sorted)
+        if (alen(total_simulation_list) == 1) {
+            median_total_simulation = int((total_simulation_sorted[int(alen(total_simulation_list) / 2)] + total_simulation_sorted[int(alen(total_simulation_list) / 2) + 1]) / 2)
+        } else {
+            median_total_simulation = total_simulation_sorted[int(alen(total_simulation_list) / 2)]
+        }
     } else {
         # When we failed to falsify, we let everything 0.
         mean_total_simulation = 0
@@ -160,12 +178,14 @@ END {
         min_total_time = 0
         min_eq_simulation = 0
         min_simulation_time = 0
+
+        median_total_simulation = 0
     }
 
     # Output the summary
     printf "\"%s\",\"%s\",", system_name, property
-    printf "\"%g\",\"%g\",\"%d\",\"%d\",",
-        mean_total_simulation, sdev_total_simulation, min_total_simulation, max_total_simulation
+    printf "\"%g\",\"%g\",\"%g\",\"%d\",\"%d\",",
+        mean_total_simulation, median_total_simulation, sdev_total_simulation, min_total_simulation, max_total_simulation
     printf "\"%g\",\"%g\",\"%d\",\"%d\",",
         mean_total_time, sdev_total_time, min_total_time, max_total_time
     printf "\"%g\",\"%g\",\"%d\",\"%d\",",
