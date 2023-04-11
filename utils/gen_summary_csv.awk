@@ -30,7 +30,7 @@ BEGIN {
     FS = ","
     OFS = ","
     # Constants
-    MAX_TOTAL_SIMULATION = 1000000
+    MAX_TOTAL_SIMULATION = 1500
     # Print the header
     print "\"system\",\"property\",\"mean total simulations\",\"sdev total simulations\",\"min total simulations\",\"max total simulations\",\"mean total time\",\"sdev total time\",\"min total time\",\"max total time\",\"mean simulations for equivalence testing\",\"sdev simulations for equivalence testing\",\"min simulations for equivalence testing\",\"max simulations for equivalence testing\",\"mean simulation time\",\"sdev simulation time\",\"min simulation time\",\"max simulation time\",\"num falsified\""
 }

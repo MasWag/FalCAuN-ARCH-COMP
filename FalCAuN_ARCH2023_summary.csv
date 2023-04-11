@@ -1,5 +1,5 @@
 "system","property","mean total simulations","sdev total simulations","min total simulations","max total simulations","mean total time","sdev total time","min total time","max total time","mean simulations for equivalence testing","sdev simulations for equivalence testing","min simulations for equivalence testing","max simulations for equivalence testing","mean simulation time","sdev simulation time","min simulation time","max simulation time","num falsified"
-"AT","AT1","1368","729.026","554","2722","280.789","134.652","121","527","134.2","53.7825","62","229","267.713","129.612","113","505","5"
+"AT","AT1","1029.5","302.388","554","1395","219.093","60.2657","121","285","134.75","60.1181","62","229","208.368","58.2176","113","272","4"
 "AT","AT2","501.5","384.583","147","1280","109.997","86.0031","38","290","111.833","74.0955","50","241","102.872","83.492","34","278","6"
 "AT","AT6a","457.9","246.449","168","842","82.197","37.9566","39","146","50","0","50","50","74.5905","36.1053","33","137","10"
 "AT","AT6b","600","194.521","321","1021","103.957","28.3065","59","166","50","0","50","50","95.2413","26.6884","53","153","10"
