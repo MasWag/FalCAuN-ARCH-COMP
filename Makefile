@@ -26,7 +26,7 @@ EXPERIMENT_NUMBERS := $(shell seq 1 10)
 AT_BENCHMARKS := AT1 AT2 AT6a AT6b AT6c AT1_constrained AT2_constrained AT6c_constrained 
 CC_BENCHMARKS := CC1 CC2 CC3
 SC_BENCHMARKS := SC
-PACEMAKER_BENCHMARKS := pacemaker
+PACEMAKER_BENCHMARKS := PM1
 BENCHMARKS := $(AT_BENCHMARKS)
 #******
 
@@ -43,10 +43,10 @@ all: summary.csv validation.csv
 #  It generates a summary CSV file for all the benchmarks.
 # SOURCE
 #
-summary.csv: $(AT_BENCHMARKS:%=/tmp/AT/results/summary-%.csv) $(CC_BENCHMARKS:%=/tmp/CC/results/summary-%.csv) $(SC_BENCHMARKS:%=/tmp/SC/results/summary-%.csv) $(PACEMAKER_BENCHMARKS:%=/tmp/pacemaker/results/summary-%.csv)
+summary.csv: $(AT_BENCHMARKS:%=/tmp/AT/results/summary-%.csv) $(CC_BENCHMARKS:%=/tmp/CC/results/summary-%.csv) $(SC_BENCHMARKS:%=/tmp/SC/results/summary-%.csv) $(PACEMAKER_BENCHMARKS:%=/tmp/PM/results/summary-%.csv)
 	awk 'FNR > 1 || NR == 1' $^ > $@
 
-summary-eq.csv: $(AT_BENCHMARKS:%=/tmp/AT/results/summary-eq-%.csv) $(CC_BENCHMARKS:%=/tmp/CC/results/summary-eq-%.csv) $(SC_BENCHMARKS:%=/tmp/SC/results/summary-eq-%.csv) $(PACEMAKER_BENCHMARKS:%=/tmp/pacemaker/results/summary-eq-%.csv)
+summary-eq.csv: $(AT_BENCHMARKS:%=/tmp/AT/results/summary-eq-%.csv) $(CC_BENCHMARKS:%=/tmp/CC/results/summary-eq-%.csv) $(SC_BENCHMARKS:%=/tmp/SC/results/summary-eq-%.csv) $(PACEMAKER_BENCHMARKS:%=/tmp/PM/results/summary-eq-%.csv)
 	awk 'FNR > 1 || NR == 1' $^ > $@
 #******
 
@@ -92,5 +92,5 @@ summary-eq-%.csv: ./utils/gen_summary_eq_limit_csv.awk $(foreach i,$(EXPERIMENT_
 #  It generates a CSV file for validation
 # SOURCE
 #
-validation.csv: $(foreach i,$(EXPERIMENT_NUMBERS),$(AT_BENCHMARKS:%=./AT/results/result-%_$i.txt)) $(foreach i,$(EXPERIMENT_NUMBERS),$(CC_BENCHMARKS:%=./CC/results/result-%_$i.txt)) $(foreach i,$(EXPERIMENT_NUMBERS),$(SC_BENCHMARKS:%=./SC/results/result-%_$i.txt)) $(foreach i,$(EXPERIMENT_NUMBERS),$(PACEMAKER_BENCHMARKS:%=./pacemaker/results/result-%_$i.txt))
+validation.csv: $(foreach i,$(EXPERIMENT_NUMBERS),$(AT_BENCHMARKS:%=./AT/results/result-%_$i.txt)) $(foreach i,$(EXPERIMENT_NUMBERS),$(CC_BENCHMARKS:%=./CC/results/result-%_$i.txt)) $(foreach i,$(EXPERIMENT_NUMBERS),$(SC_BENCHMARKS:%=./SC/results/result-%_$i.txt)) $(foreach i,$(EXPERIMENT_NUMBERS),$(PACEMAKER_BENCHMARKS:%=./PM/results/result-%_$i.txt))
 	./utils/gen_validation_csv.sh $^ > $@

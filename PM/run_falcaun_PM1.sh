@@ -137,7 +137,7 @@ mkdir -p results
 #
 # SOURCE
 for t in $(seq "$from" "$to"); do
-    prefix="pacemaker_$t"
+    prefix="PM1_$t"
     # rm -f Autotrans_shift.mdl.autosave
     # Kill MathWorks Service Host if it is running
     killall MathWorksServiceHost
