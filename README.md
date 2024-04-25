@@ -7,6 +7,18 @@ FalCAuN-ARCH-COMP
 
 This repository contains the materials to execute [FalCAuN](https://github.com/MasWag/FalCAuN) with the benchmark for ARCH-COMP's [falsification](https://easychair.org/publications/paper/ps5t) track.
 
+Note: The script in this repository requires the development version of FalCAuN (as of 2024-04-25), where we target scripting via Kotlin in addition to the original command line interface.
+
+Requirements
+------------
+
+To execute the scripts in this repository. You need to install [FalCAuN](https://github.com/MasWag/FalCAuN). As of 2024-04-25, the [`raw_simulink_model`](https://github.com/MasWag/FalCAuN/tree/raw_simulink_model) branch is required.
+
+In addition to FalCAuN, you need to install the following tools.
+
+- [MATLAB](https://www.mathworks.com/products/matlab.html) with Simulink and Stateflow. Some benchmarks require additional toolboxes.
+- [kscript](https://github.com/kscripting/kscript)
+
 On the benchmarks
 -----------------
 

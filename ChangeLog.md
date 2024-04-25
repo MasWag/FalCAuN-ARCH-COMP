@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+ARCH-COMP 2024
+--------------
+
+This year, we are largely updating FalCAuN to use it from [kscript](https://github.com/kscripting/kscript).
+
 ARCH-COMP 2023
 --------------
 
