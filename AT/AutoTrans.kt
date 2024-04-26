@@ -19,16 +19,8 @@
  *
  ********/
 
-// The scripts depends on FalCAuN-core and FalCAuN-matlab
-@file:DependsOn("net.maswag:FalCAuN-core:1.0-SNAPSHOT", "net.maswag:FalCAuN-matlab:1.0-SNAPSHOT")
-// We assume that the MATLAB_HOME environment variable is set
-@file:KotlinOptions("-Djava.library.path=$MATLAB_HOME/bin/maca64/:$MATLAB_HOME/bin/maci64:$MATLAB_HOME/bin/glnxa64")
-
-import ch.qos.logback.classic.Level
-import ch.qos.logback.classic.Logger
-import org.slf4j.LoggerFactory
-import net.automatalib.modelchecker.ltsmin.AbstractLTSmin
-import net.automatalib.modelchecker.ltsmin.LTSminVersion
+// Import the common configuration
+@file:Import("../Common.kt")
 
 import net.maswag.InputMapperReader
 
@@ -61,27 +53,7 @@ val throttleValues = listOf(0.0, 50.0, 100.0)
 val brakeValues = listOf(0.0, 325.0 * 0.5, 325.0)
 val inputMapper = InputMapperReader.make(listOf(throttleValues, brakeValues))
 
-// Constants for the GA-based equivalence testing
-val maxTest = 50000
-val populationSize = 50
-val crossoverProb = 0.9
-val mutationProb = 0.01
-
 // Define the output signal names
 val velocity = "signal(0)"
 val rotation = "signal(1)"
 val gear = "signal(2)"
-
-// The following suppresses the debug log
-var updaterLogger = LoggerFactory.getLogger(AbstractAdaptiveSTLUpdater::class.java) as Logger
-updaterLogger.level = Level.INFO
-var updateListLogger = LoggerFactory.getLogger(AdaptiveSTLList::class.java) as Logger
-updateListLogger.level = Level.INFO
-var LTSminVersionLogger = LoggerFactory.getLogger(LTSminVersion::class.java) as Logger
-LTSminVersionLogger.level = Level.INFO
-var AbstractLTSminLogger = LoggerFactory.getLogger(AbstractLTSmin::class.java) as Logger
-AbstractLTSminLogger.level = Level.INFO
-var EQSearchProblemLogger = LoggerFactory.getLogger(EQSearchProblem::class.java) as Logger
-EQSearchProblemLogger.level = Level.INFO
-var SimulinkSteadyStateGeneticAlgorithmLogger = LoggerFactory.getLogger(EQSteadyStateGeneticAlgorithm::class.java) as Logger
-SimulinkSteadyStateGeneticAlgorithmLogger.level = Level.INFO

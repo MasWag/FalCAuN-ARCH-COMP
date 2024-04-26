@@ -72,7 +72,8 @@ val stlList = listOf(
         outputMapperReader.largest
     )
 }.toList()
-val signalLength = (30 / signalStep).toInt()
+// We need to add by one because the first sample is at time 0
+val signalLength = (30 / signalStep).toInt() + 1
 val properties = AdaptiveSTLList(stlList, signalLength)
 
 // Load the automatic transmission model. This automatically closes MATLAB

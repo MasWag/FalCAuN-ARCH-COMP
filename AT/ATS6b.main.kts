@@ -72,7 +72,8 @@ val stlList = listOf(
         outputMapperReader.largest
     )
 }.toList()
-val signalLength = (30 / signalStep).toInt()
+// We need to add by one because the first sample is at time 0
+val signalLength = (30 / signalStep).toInt() + 1
 val properties = AdaptiveSTLList(stlList, signalLength)
 
 // Load the automatic transmission model. This automatically closes MATLAB
@@ -80,7 +81,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { au
     // Configure and run the verifier
     val verifier = NumericSULVerifier(autoTransSUL, signalStep, properties, mapper)
     // Timeout must be set before adding equivalence testing
-    verifier.setTimeout(20 * 60) // 10 minutes
+    verifier.setTimeout(10 * 60) // 10 minutes
     // We first try the corner cases
     verifier.addCornerCaseEQOracle(signalLength, signalLength / 2);
     // Then, search with GA
