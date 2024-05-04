@@ -19,8 +19,7 @@
  *
  ********/
 
-// Import the common configuration
-@file:Import("../Common.kt")
+@file:Import("../Common.kt") // Import the common configuration
 
 import net.maswag.InputMapperReader
 

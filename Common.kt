@@ -21,6 +21,8 @@
 
 // The scripts depends on FalCAuN-core and FalCAuN-matlab
 @file:DependsOn("net.maswag:FalCAuN-core:1.0-SNAPSHOT", "net.maswag:FalCAuN-matlab:1.0-SNAPSHOT")
+// We use kotlin-logging for logging
+@file:DependsOn("io.github.microutils:kotlin-logging-jvm:3.0.5")
 // We assume that the MATLAB_HOME environment variable is set
 @file:KotlinOptions("-Djava.library.path=$MATLAB_HOME/bin/maca64/:$MATLAB_HOME/bin/maci64:$MATLAB_HOME/bin/glnxa64")
 
@@ -29,6 +31,9 @@ import ch.qos.logback.classic.Logger
 import org.slf4j.LoggerFactory
 import net.automatalib.modelchecker.ltsmin.AbstractLTSmin
 import net.automatalib.modelchecker.ltsmin.LTSminVersion
+import mu.KotlinLogging
+import java.io.OutputStream
+import java.io.FileOutputStream
 
 // Constants for the GA-based equivalence testing
 val maxTest = 50000
@@ -51,3 +56,66 @@ var SimulinkSteadyStateGeneticAlgorithmLogger = LoggerFactory.getLogger(EQSteady
 SimulinkSteadyStateGeneticAlgorithmLogger.level = Level.INFO
 var MealyFixedSetLogger = LoggerFactory.getLogger(MealyFixedSetEQOracle::class.java) as Logger
 MealyFixedSetLogger.level = Level.DEBUG
+
+// Declare the logger
+val logger = KotlinLogging.logger {}
+
+// Declare the data class for the summary of the experimental results
+data class ExperimentSummary(
+    val system: String,
+    val property: String,
+    val totalSimulations: Int,
+    val totalTime: Double,
+    val simulationsForEqTest: Int,
+    val simulationTime: Double,
+    val falsified: String,
+    val input: String
+)
+
+// Define the function to write the summary to a CSV file
+fun OutputStream.writeCsv(summary: List<ExperimentSummary>) {
+    val writer = bufferedWriter()
+    writer.write("\"system\",\"property\",\"total simulations\",\"total time\",\"simulations for equivalence testing\",\"simulation time\",\"falsified\",\"input\"")
+    writer.newLine()
+    for (s in summary) {
+        val line = "${s.system},${s.property},${s.totalSimulations},${s.totalTime},${s.simulationsForEqTest},${s.simulationTime},${s.falsified},${s.input}"
+        writer.write(line)
+        writer.newLine()
+    }
+    writer.flush()
+}
+
+// Define the function to run the experiment
+fun runExperiment(verifier: NumericSULVerifier, systemName: String = "", propertyName: String = ""):  ExperimentSummary {
+    val timer = TimeMeasure()
+    timer.start()
+    val result = verifier.run()
+    timer.stop()
+
+    // Print the result
+    if (result) {
+        logger.info("The property is likely satisfied")
+    } else {
+        for (i in 0 until verifier.cexProperty.size) {
+            logger.info("${verifier.cexProperty[i]} is falsified by the following counterexample")
+            logger.info("cex concrete input: ${verifier.cexConcreteInput[i]}")
+            logger.info("cex abstract input: ${verifier.cexAbstractInput[i]}")
+            logger.info("cex output: ${verifier.cexOutput[i]}")
+        }
+    }
+    logger.info("Total execution time: ${timer.getSecond()} [sec]")
+    logger.info("Execution time for simulation: ${verifier.simulationTimeSecond} [sec]")
+    logger.info("Number of simulations: ${verifier.simulinkCount}")
+    logger.info("Number of simulations for equivalence testing: ${verifier.simulinkCountForEqTest}")
+
+    return ExperimentSummary(
+        systemName,
+        propertyName,
+        verifier.simulinkCount,
+        timer.getSecond(),
+        verifier.simulinkCountForEqTest,
+        verifier.simulationTimeSecond,
+        (if (result) "no" else "yes"),
+        (if (result) "" else "\"${verifier.cexConcreteInput[0]}\"")
+    )
+}

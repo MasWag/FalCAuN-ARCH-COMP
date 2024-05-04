@@ -23,16 +23,13 @@
  *
  ********/
 
-// Import the common configuration
-@file:Import("../Common.kt")
-
-import kotlin.streams.toList
-import java.io.BufferedReader
-import java.io.StringReader
+@file:Import("../Common.kt") // Import the common configuration
 
 import net.maswag.*
-
 import net.maswag.InputMapperReader
+import java.io.BufferedReader
+import java.io.StringReader
+import kotlin.streams.toList
 
 // Define the configuration of the automatic transmission model
 val initScript = """
@@ -57,10 +54,22 @@ val inputMapper = InputMapperReader.make(listOf(inputValues))
 // Define the output signal names
 val pressure = "signal(3)"
 
+logger.info("This is the script to falsify the automatic transmission benchmark against the S1 formula by FalCAuN")
+
+// The number of repetitions of the experiment
+var experimentSize = 1
+if (args.size > 0) {
+    experimentSize = args[0].toInt()
+    logger.info("The experiment is executed for $experimentSize times")
+} else {
+    logger.info("The number of repetitions of the experiment is not specified. We use the default repetition size $experimentSize")
+}
+
 // Define the output mapper
 val ignoredValues = listOf(null)
 val pressureValues = listOf(87.0, 87.5, null)
-val outputMapperReader = OutputMapperReader(listOf(ignoredValues, ignoredValues, ignoredValues, ignoredValues, pressureValues, pressureValues))
+val outputMapperReader =
+    OutputMapperReader(listOf(ignoredValues, ignoredValues, ignoredValues, ignoredValues, pressureValues, pressureValues))
 outputMapperReader.parse()
 val mapperString = listOf("previous_max_output(3)", "previous_min_output(3)").joinToString("\n")
 val signalMapper: ExtendedSignalMapper = ExtendedSignalMapper.parse(BufferedReader(StringReader(mapperString)))
@@ -76,51 +85,62 @@ val prevMinPressure = "output(5)"
 
 // Define the STL properties
 val stlFactory = STLFactory()
-val stlList = listOf(
-    "(alw_[${(30 / signalStep).toInt()},${(35 / signalStep).toInt()}] ($prevMaxPressure < 87.5 && $prevMaxPressure > 87))"
-).stream().map { stlString ->
-    stlFactory.parse(
-        stlString,
-        inputMapper,
-        outputMapperReader.outputMapper,
-        outputMapperReader.largest
-    )
-}.toList()
+val stlList =
+    listOf(
+        "(alw_[${(30 / signalStep).toInt()},${(35 / signalStep).toInt()}] ($prevMaxPressure < 87.5 && $prevMaxPressure > 87))",
+    ).stream().map { stlString ->
+        stlFactory.parse(
+            stlString,
+            inputMapper,
+            outputMapperReader.outputMapper,
+            outputMapperReader.largest,
+        )
+    }.toList()
 // We need to add by one because the first sample is at time 0
 val signalLength = (35 / signalStep).toInt() + 1
-val properties = AdaptiveSTLList(stlList, signalLength)
 
 // Load the automatic transmission model. This automatically closes MATLAB
-SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { autoTransSUL ->
-    // Configure and run the verifier
-    val verifier = NumericSULVerifier(autoTransSUL, signalStep, properties, mapper)
-    // Timeout must be set before adding equivalence testing
-    verifier.setTimeout(10 * 60) // 10 minutes
-    // We first try the corner cases
-    verifier.addCornerCaseEQOracle(signalLength, signalLength / 2);
-    // Then, search with GA
-    verifier.addGAEQOracleAll(
-        signalLength,
-        maxTest,
-        ArgParser.GASelectionKind.Tournament,
-        populationSize,
-        crossoverProb,
-        mutationProb
-    )
-    val result = verifier.run()
+SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
+    // Repeat the following experiment for the specified number of times
+    for (i in 0 until experimentSize) {
+        val properties = AdaptiveSTLList(stlList, signalLength)
+        // Since SUL counts the number of simulations and the execution time, we need to clear it before each experiment
+        sul.clear()
+        logger.info("Experiment ${i + 1} / $experimentSize")
+        // Configure and run the verifier
+        val verifier = NumericSULVerifier(sul, signalStep, properties, mapper)
+        // Timeout must be set before adding equivalence testing
+        verifier.setTimeout(10 * 60) // 10 minutes
+        // We first try the corner cases
+        verifier.addCornerCaseEQOracle(signalLength, signalLength / 2)
+        // Then, search with GA
+        verifier.addGAEQOracleAll(
+            signalLength,
+            maxTest,
+            ArgParser.GASelectionKind.Tournament,
+            populationSize,
+            crossoverProb,
+            mutationProb,
+        )
+        val timer = TimeMeasure()
+        timer.start()
+        val result = verifier.run()
+        timer.stop()
 
-    // Print the result
-    if (result) {
-        println("The property is likely satisfied")
-    } else {
-        for (i in 0 until verifier.cexProperty.size) {
-            println("${verifier.cexProperty[i]} is falsified by the following counterexample")
-            println("cex concrete input: ${verifier.cexConcreteInput[i]}")
-            println("cex abstract input: ${verifier.cexAbstractInput[i]}")
-            println("cex output: ${verifier.cexOutput[i]}")
+        // Print the result
+        if (result) {
+            logger.info("The property is likely satisfied")
+        } else {
+            for (i in 0 until verifier.cexProperty.size) {
+                logger.info("${verifier.cexProperty[i]} is falsified by the following counterexample")
+                logger.info("cex concrete input: ${verifier.cexConcreteInput[i]}")
+                logger.info("cex abstract input: ${verifier.cexAbstractInput[i]}")
+                logger.info("cex output: ${verifier.cexOutput[i]}")
+            }
         }
+        logger.info("Total execution time: ${timer.getSecond} [sec]")
+        logger.info("Execution time for simulation: ${verifier.simulationTimeSecond} [sec]")
+        logger.info("Number of simulations: ${verifier.simulinkCount}")
+        logger.info("Number of simulations for equivalence testing: ${verifier.simulinkCountForEqTest}")
     }
-    println("Execution time for simulation: ${verifier.simulationTimeSecond} [sec]")
-    println("Number of simulations: ${verifier.simulinkCount}")
-    println("Number of simulations for equivalence testing: ${verifier.simulinkCountForEqTest}")
 }

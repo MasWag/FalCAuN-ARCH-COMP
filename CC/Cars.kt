@@ -19,8 +19,7 @@
  *
  ********/
 
-// Import the common configuration
-@file:Import("../Common.kt")
+@file:Import("../Common.kt") // Import the common configuration
 
 import net.maswag.InputMapperReader
 
@@ -41,3 +40,8 @@ val y2 = "signal(1)"
 val y3 = "signal(2)"
 val y4 = "signal(3)"
 val y5 = "signal(4)"
+
+// Define the function to scale the duration
+fun scaleDuration(duration: Int): Int {
+    return (duration / signalStep).toInt()
+}

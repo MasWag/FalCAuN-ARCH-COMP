@@ -23,14 +23,23 @@
  *
  ********/
 
-// Import the constants for AutoTrans
-@file:Import("./AutoTrans.kt")
-
-import kotlin.streams.toList
-import java.io.BufferedReader
-import java.io.StringReader
+@file:Import("./AutoTrans.kt") // Import the constants for AutoTrans
 
 import net.maswag.*
+import java.io.BufferedReader
+import java.io.StringReader
+import kotlin.streams.toList
+
+logger.info("This is the script to falsify the automatic transmission benchmark against the S1 formula by FalCAuN")
+
+// The number of repetitions of the experiment
+var experimentSize = 1
+if (args.size > 0) {
+    experimentSize = args[0].toInt()
+    logger.info("The experiment is executed for $experimentSize times")
+} else {
+    logger.info("The number of repetitions of the experiment is not specified. We use the default repetition size $experimentSize")
+}
 
 // Define the output mapper
 val velocityValues = listOf(120.0, null)
@@ -51,51 +60,48 @@ val prevMaxVelocity = "output(3)"
 
 // Define the STL properties
 val stlFactory = STLFactory()
-val stlList = listOf(
-    "($velocity < 120 && alw_[0,${(20 / signalStep).toInt()}] $prevMaxVelocity < 120)"
-).stream().map { stlString ->
-    stlFactory.parse(
-        stlString,
-        inputMapper,
-        outputMapperReader.outputMapper,
-        outputMapperReader.largest
-    )
-}.toList()
+val stlList =
+    listOf(
+        "($velocity < 120 && alw_[0,${(20 / signalStep).toInt()}] $prevMaxVelocity < 120)",
+    ).stream().map { stlString ->
+        stlFactory.parse(
+            stlString,
+            inputMapper,
+            outputMapperReader.outputMapper,
+            outputMapperReader.largest,
+        )
+    }.toList()
 // We need to add by one because the first sample is at time 0
 val signalLength = (20 / signalStep).toInt() + 1
-val properties = AdaptiveSTLList(stlList, signalLength)
 
 // Load the automatic transmission model. This automatically closes MATLAB
-SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { autoTransSUL ->
-    // Configure and run the verifier
-    val verifier = NumericSULVerifier(autoTransSUL, signalStep, properties, mapper)
-    // Timeout must be set before adding equivalence testing
-    verifier.setTimeout(10 * 60) // 10 minutes
-    // We first try the corner cases
-    verifier.addCornerCaseEQOracle(signalLength, signalLength / 2);
-    // Then, search with GA
-    verifier.addGAEQOracleAll(
-        signalLength,
-        maxTest,
-        ArgParser.GASelectionKind.Tournament,
-        populationSize,
-        crossoverProb,
-        mutationProb
-    )
-    val result = verifier.run()
-
-    // Print the result
-    if (result) {
-        println("The property is likely satisfied")
-    } else {
-        for (i in 0 until verifier.cexProperty.size) {
-            println("${verifier.cexProperty[i]} is falsified by the following counterexample")
-            println("cex concrete input: ${verifier.cexConcreteInput[i]}")
-            println("cex abstract input: ${verifier.cexAbstractInput[i]}")
-            println("cex output: ${verifier.cexOutput[i]}")
-        }
+SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
+    // Create a list to store the results
+    val results = mutableListOf<ExperimentSummary>()
+    // Repeat the following experiment for the specified number of times
+    for (i in 0 until experimentSize) {
+        val properties = AdaptiveSTLList(stlList, signalLength)
+        // Since SUL counts the number of simulations and the execution time, we need to clear it before each experiment
+        sul.clear()
+        logger.info("Experiment ${i + 1} / $experimentSize")
+        // Configure and run the verifier
+        val verifier = NumericSULVerifier(sul, signalStep, properties, mapper)
+        // Timeout must be set before adding equivalence testing
+        verifier.setTimeout(10 * 60) // 10 minutes
+        // We first try the corner cases
+        verifier.addCornerCaseEQOracle(signalLength, signalLength / 2)
+        // Then, search with GA
+        verifier.addGAEQOracleAll(
+            signalLength,
+            maxTest,
+            ArgParser.GASelectionKind.Tournament,
+            populationSize,
+            crossoverProb,
+            mutationProb,
+        )
+        // Run the experiment
+        val result = runExperiment(verifier, "AT", "AT1")
+        results.add(result)
     }
-    println("Execution time for simulation: ${verifier.simulationTimeSecond} [sec]")
-    println("Number of simulations: ${verifier.simulinkCount}")
-    println("Number of simulations for equivalence testing: ${verifier.simulinkCountForEqTest}")
+    FileOutputStream("result-AT1.csv").apply { writeCsv(results) }
 }
