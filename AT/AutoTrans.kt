@@ -44,10 +44,10 @@ load_system(mdl);
 % Bardh Hoxha, Houssam Abbas, Georgios E. Fainekos
 """
 val paramNames = listOf("throttle", "brake")
-var signalStep = 1.0
 val simulinkSimulationStep = 0.0025
 
 // Define the input mapper
+var signalStep = 1.0
 val throttleValues = listOf(0.0, 50.0, 100.0)
 val brakeValues = listOf(0.0, 325.0 * 0.5, 325.0)
 val inputMapper = InputMapperReader.make(listOf(throttleValues, brakeValues))

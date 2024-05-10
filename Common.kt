@@ -72,7 +72,11 @@ data class ExperimentSummary(
     val input: String
 )
 
-// Define the function to write the summary to a CSV file
+/**
+ * Write the summary of experiments to a CSV file.
+ *
+ * @param summary The list of experiment summaries.
+ */
 fun OutputStream.writeCsv(summary: List<ExperimentSummary>) {
     val writer = bufferedWriter()
     writer.write("\"system\",\"property\",\"total simulations\",\"total time\",\"simulations for equivalence testing\",\"simulation time\",\"falsified\",\"input\"")
@@ -85,7 +89,14 @@ fun OutputStream.writeCsv(summary: List<ExperimentSummary>) {
     writer.flush()
 }
 
-// Define the function to run the experiment
+/**
+ * Run the experiment with the given verifier.
+ *
+ * @param verifier The verifier to run the experiment.
+ * @param systemName The name of the system.
+ * @param propertyName The name of the property.
+ * @return The summary of the experiment.
+ */
 fun runExperiment(verifier: NumericSULVerifier, systemName: String = "", propertyName: String = ""):  ExperimentSummary {
     val timer = TimeMeasure()
     timer.start()
