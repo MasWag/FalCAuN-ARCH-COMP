@@ -79,14 +79,15 @@ val stlFactory = STLFactory()
 val stlSignalLength = "alw_[${(10 / signalStep).toInt()},${(10 / signalStep).toInt()}] $LRL > 0"
 val stlGPaceCountLt15 = "($paceCount < 16.0 && alw_[0,${(10 / signalStep).toInt()}] $prevMaxPaceCount < 16.0)"
 val stlFPaceCountGt8 = "($paceCount > 7.0 || ev_[0,${(10 / signalStep).toInt()}] $prevMaxPaceCount > 7.0)"
-val stlList = listOf(
-    stlFactory.parse(
-        "(!($stlSignalLength)) || ($stlGPaceCountLt15 && $stlFPaceCountGt8)",
-        inputMapper,
-        outputMapperReader.outputMapper,
-        outputMapperReader.largest
+val stlList =
+    listOf(
+        stlFactory.parse(
+            "(!($stlSignalLength)) || ($stlGPaceCountLt15 && $stlFPaceCountGt8)",
+            inputMapper,
+            outputMapperReader.outputMapper,
+            outputMapperReader.largest,
+        ),
     )
-)
 println(stlList.get(0).toAbstractString())
 val signalLength = (12 / signalStep).toInt()
 val properties = AdaptiveSTLList(stlList, signalLength)
@@ -112,9 +113,9 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { pa
         ArgParser.GASelectionKind.Tournament,
         populationSize,
         crossoverProb,
-        mutationProb
+        mutationProb,
     )
-    //verifier.addWpMethodEQOracle(6)
+    // verifier.addWpMethodEQOracle(6)
     val result = verifier.run()
 
     // Print the result
