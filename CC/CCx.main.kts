@@ -30,6 +30,17 @@ import java.io.BufferedReader
 import java.io.StringReader
 import kotlin.streams.toList
 
+logger.info("This is the script to falsify the automatic transmission benchmark against the S1 formula by FalCAuN")
+
+// The number of repetitions of the experiment
+var experimentSize = 1
+if (args.size > 0) {
+    experimentSize = args[0].toInt()
+    logger.info("The experiment is executed for $experimentSize times")
+} else {
+    logger.info("The number of repetitions of the experiment is not specified. We use the default repetition size $experimentSize")
+}
+
 // Define the output mapper
 val ignoredValues = listOf(null)
 val yDiffValues = listOf(7.5, null)
