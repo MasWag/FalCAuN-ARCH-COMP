@@ -22,7 +22,7 @@
 // The scripts depends on FalCAuN-core and FalCAuN-matlab
 @file:DependsOn("net.maswag:FalCAuN-core:1.0-SNAPSHOT", "net.maswag:FalCAuN-matlab:1.0-SNAPSHOT")
 // We use kotlin-logging for logging
-@file:DependsOn("io.github.microutils:kotlin-logging-jvm:3.0.5")
+@file:DependsOn("io.github.oshai:kotlin-logging-jvm:5.1.0")
 // We assume that the MATLAB_HOME environment variable is set
 @file:KotlinOptions("-Djava.library.path=$MATLAB_HOME/bin/maca64/:$MATLAB_HOME/bin/maci64:$MATLAB_HOME/bin/glnxa64")
 
@@ -31,7 +31,7 @@ import ch.qos.logback.classic.Logger
 import org.slf4j.LoggerFactory
 import net.automatalib.modelchecker.ltsmin.AbstractLTSmin
 import net.automatalib.modelchecker.ltsmin.LTSminVersion
-import mu.KotlinLogging
+import io.github.oshai.kotlinlogging.KotlinLogging
 import java.io.OutputStream
 import java.io.FileOutputStream
 

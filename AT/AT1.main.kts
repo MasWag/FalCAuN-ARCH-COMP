@@ -1,9 +1,9 @@
 #!/usr/bin/env kscript
-/*****h* kotlin/ATS6a
+/*****h* AT/AT1
  *  NAME
- *   ATS6a.main.kts
+ *   AT1.main.kts
  *  DESCRIPTION
- *   Script to falsify the automatic transmission benchmark against the S6a formula by FalCAuN
+ *   Script to falsify the automatic transmission benchmark against the S1 formula by FalCAuN
  *  AUTHOR
  *   Masaki Waga
  *  HISTORY
@@ -19,7 +19,7 @@
  *   - The environment variable MATLAB_HOME is set to the root directory of MATLAB, e.g., /Applications/MATLAB_R2024a.app/ or /usr/local/MATLAB/R2024a.
  *
  *  USAGE
- *   ./ATS6a.main.kts
+ *   ./AT1.main.kts
  *
  ********/
 
@@ -30,7 +30,7 @@ import java.io.BufferedReader
 import java.io.StringReader
 import kotlin.streams.toList
 
-logger.info("This is the script to falsify the automatic transmission benchmark against the S6a formula by FalCAuN")
+logger.info("This is the script to falsify the automatic transmission benchmark against the S1 formula by FalCAuN")
 
 // The number of repetitions of the experiment
 var experimentSize = 1
@@ -42,15 +42,14 @@ if (args.size > 0) {
 }
 
 // Define the output mapper
-val velocityValues = listOf(35.0, null)
-val rotationValues = listOf(3000.0, null)
-val ignoreValues = listOf(null)
+val velocityValues = listOf(120.0, null)
+val rotationValues = listOf(null)
 val gearValues = listOf(null)
-val outputMapperReader = OutputMapperReader(listOf(ignoreValues, ignoreValues, gearValues, velocityValues, rotationValues))
+val outputMapperReader = OutputMapperReader(listOf(velocityValues, rotationValues, gearValues, velocityValues))
 outputMapperReader.parse()
-val mapperString = listOf("previous_max_output(0)", "previous_max_output(1)").joinToString("\n")
+val mapperString = listOf("previous_max_output(0)").joinToString("\n")
 val signalMapper: ExtendedSignalMapper = ExtendedSignalMapper.parse(BufferedReader(StringReader(mapperString)))
-assert(signalMapper.size() == 2)
+assert(signalMapper.size() == 1)
 val mapper =
     NumericSULMapper(inputMapper, outputMapperReader.largest, outputMapperReader.outputMapper, signalMapper)
 
@@ -58,22 +57,12 @@ val mapper =
 // Pseudo signals representing the maximum and minimum values between sampling points
 // These signals exclude the begin time and include the end time
 val prevMaxVelocity = "output(3)"
-val prevMaxRotation = "output(4)"
 
 // Define the STL properties
 val stlFactory = STLFactory()
-// val stlGRotationLt3000 = "$rotation < 3000.0 && []_[0, ${(30 / signalStep).toInt()}] ($prevMaxRotation < 3000.0)"
-val stlGRotationLt3000 = "[]_[0, ${(30 / signalStep).toInt()}] ($prevMaxRotation < 3000.0)"
-val stlNotGRotationLt3000 = "<>_[0, ${(30 / signalStep).toInt()}] ($prevMaxRotation > 3000.0)"
-// val stlGVelocityLt35 = "$velocity < 35.0 && []_[0,${(4 / signalStep).toInt()}] ($prevMaxVelocity < 35.0)"
-val stlGVelocityLt35 = "[]_[0,${(4 / signalStep).toInt()}] ($prevMaxVelocity < 35.0)"
 val stlList =
     listOf(
-        // "($stlGRotationLt3000) -> ($stlGVelocityLt35)",
-        // We use || instead of -> because specification strengthening does not support -> yet
-        // "(!($stlGRotationLt3000)) || ($stlGVelocityLt35)",
-        // Similarly, we use <>! instead of ![]
-        "($stlNotGRotationLt3000) || ($stlGVelocityLt35)",
+        "($velocity < 120 && alw_[0,${(20 / signalStep).toInt()}] $prevMaxVelocity < 120)",
     ).stream().map { stlString ->
         stlFactory.parse(
             stlString,
@@ -83,7 +72,7 @@ val stlList =
         )
     }.toList()
 // We need to add by one because the first sample is at time 0
-val signalLength = (30 / signalStep).toInt() + 1
+val signalLength = (20 / signalStep).toInt() + 1
 
 // Load the automatic transmission model. This automatically closes MATLAB
 SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
@@ -111,9 +100,8 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
             mutationProb,
         )
         // Run the experiment
-        var result = runExperiment(verifier, "AT", "AT6a")
+        val result = runExperiment(verifier, "AT", "AT1")
         results.add(result)
     }
-    FileOutputStream("result-AT6a.csv").apply { writeCsv(results) }
-    logger.info("The results are written to result-AT6a.csv")
+    FileOutputStream("result-AT1.csv").apply { writeCsv(results) }
 }
