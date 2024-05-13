@@ -30,7 +30,7 @@ import java.io.BufferedReader
 import java.io.StringReader
 import kotlin.streams.toList
 
-logger.info("This is the script to falsify the automatic transmission benchmark against the S1 formula by FalCAuN")
+logger.info("This is the script to falsify the chasing car benchmark against the CC2 formula by FalCAuN")
 
 // The number of repetitions of the experiment
 var experimentSize = 1
@@ -73,7 +73,7 @@ val stlList =
 // We need to add by one because the first sample is at time 0
 val signalLength = (100 / signalStep).toInt() + 1
 
-// Load the automatic transmission model. This automatically closes MATLAB
+// Load the chasing car model. This automatically closes MATLAB
 SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
     // Create a list to store the results
     val results = mutableListOf<ExperimentSummary>()
