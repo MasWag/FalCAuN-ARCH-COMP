@@ -19,6 +19,11 @@ In addition to FalCAuN, you need to install the following tools.
 - [MATLAB](https://www.mathworks.com/products/matlab.html) with Simulink and Stateflow. Some benchmarks require additional toolboxes.
 - [kscript](https://github.com/kscripting/kscript)
 
+Usage
+-----
+
+You can run the experiment by running the scripts, for example, `cd AT && ./AT1.main.kts`. Since the scripts are sensitive to the current directory, you need to run the scripts in the directory of the benchmark. You can also specify the number of repetitions, for example, `cd AT && ./AT1.main.kts 10`.
+
 On the benchmarks
 -----------------
 
