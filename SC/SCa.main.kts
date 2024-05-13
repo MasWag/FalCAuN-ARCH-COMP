@@ -54,7 +54,7 @@ val inputMapper = InputMapperReader.make(listOf(inputValues))
 // Define the output signal names
 val pressure = "signal(3)"
 
-logger.info("This is the script to falsify the automatic transmission benchmark against the S1 formula by FalCAuN")
+logger.info("This is the script to falsify the stream condense benchmark against the SCa formula by FalCAuN")
 
 // The number of repetitions of the experiment
 var experimentSize = 1
@@ -101,6 +101,8 @@ val signalLength = (35 / signalStep).toInt() + 1
 
 // Load the automatic transmission model. This automatically closes MATLAB
 SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
+    // Create a list to store the results
+    val results = mutableListOf<ExperimentSummary>()
     // Repeat the following experiment for the specified number of times
     for (i in 0 until experimentSize) {
         val properties = AdaptiveSTLList(stlList, signalLength)
@@ -122,25 +124,10 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
             crossoverProb,
             mutationProb,
         )
-        val timer = TimeMeasure()
-        timer.start()
-        val result = verifier.run()
-        timer.stop()
-
-        // Print the result
-        if (result) {
-            logger.info("The property is likely satisfied")
-        } else {
-            for (i in 0 until verifier.cexProperty.size) {
-                logger.info("${verifier.cexProperty[i]} is falsified by the following counterexample")
-                logger.info("cex concrete input: ${verifier.cexConcreteInput[i]}")
-                logger.info("cex abstract input: ${verifier.cexAbstractInput[i]}")
-                logger.info("cex output: ${verifier.cexOutput[i]}")
-            }
-        }
-        logger.info("Total execution time: ${timer.getSecond} [sec]")
-        logger.info("Execution time for simulation: ${verifier.simulationTimeSecond} [sec]")
-        logger.info("Number of simulations: ${verifier.simulinkCount}")
-        logger.info("Number of simulations for equivalence testing: ${verifier.simulinkCountForEqTest}")
+        // Run the experiment
+        var result = runExperiment(verifier, "SC", "SCa")
+        results.add(result)
     }
+    FileOutputStream("result-SCa.csv").apply { writeCsv(results) }
+    logger.info("The results are written to result-SCa.csv")
 }

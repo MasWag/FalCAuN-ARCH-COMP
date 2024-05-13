@@ -104,6 +104,8 @@ val signalLength = (50 / signalStep).toInt() + 1
 
 // Load the automatic transmission model. This automatically closes MATLAB
 SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
+    // Create a list to store the results
+    val results = mutableListOf<ExperimentSummary>()
     // Repeat the following experiment for the specified number of times
     for (i in 0 until experimentSize) {
         val properties = AdaptiveSTLList(stlList, signalLength)
@@ -125,6 +127,10 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
             crossoverProb,
             mutationProb,
         )
-        runExperiment(verifier)
+        // Run the experiment
+        var result = runExperiment(verifier, "CC", "CCx")
+        results.add(result)
     }
+    FileOutputStream("result-CCx.csv").apply { writeCsv(results) }
+    logger.info("The results are written to result-CCx.csv")
 }

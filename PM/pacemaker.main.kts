@@ -26,11 +26,7 @@
  *
  ********/
 
-// This script depends on FalCAuN-core and FalCAuN-matlab
-@file:DependsOn("net.maswag:FalCAuN-core:1.0-SNAPSHOT")
-@file:DependsOn("net.maswag:FalCAuN-matlab:1.0-SNAPSHOT")
-// We assume that the MATLAB_HOME environment variable is set
-@file:KotlinOptions("-Djava.library.path=$MATLAB_HOME/bin/maca64/:$MATLAB_HOME/bin/maci64:$MATLAB_HOME/bin/glnxa64")
+@file:Import("../Common.kt") // Import the common configuration
 
 import net.maswag.*
 import java.io.BufferedReader
@@ -50,6 +46,17 @@ init_cond = [];
 val paramNames = listOf("LRI")
 val signalStep = 0.5
 val simulinkSimulationStep = 0.0025
+
+logger.info("This is the script to falsify the pacemaker benchmark  by FalCAuN")
+
+// The number of repetitions of the experiment
+var experimentSize = 1
+if (args.size > 0) {
+    experimentSize = args[0].toInt()
+    logger.info("The experiment is executed for $experimentSize times")
+} else {
+    logger.info("The number of repetitions of the experiment is not specified. We use the default repetition size $experimentSize")
+}
 
 // Define the input and output mappers
 val lriValues = listOf(50.0, 60.0, 70.0, 80.0, 90.0)
@@ -90,7 +97,6 @@ val stlList =
     )
 println(stlList.get(0).toAbstractString())
 val signalLength = (12 / signalStep).toInt()
-val properties = AdaptiveSTLList(stlList, signalLength)
 
 // Constants for the GA-based equivalence testing
 val maxTest = 10000
@@ -99,37 +105,34 @@ val crossoverProb = 0.9
 val mutationProb = 0.01
 
 // Load the automatic transmission model. This automatically closes MATLAB
-SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { pacemakerSUL ->
-    // Configure and run the verifier
-    val verifier = NumericSULVerifier(pacemakerSUL, signalStep, properties, mapper)
-    // Timeout must be set before adding equivalence testing
-    verifier.setTimeout(10 * 60) // 10 minutes
-    // We first try equivalence testing based on corner case inputs
-    verifier.addCornerCaseEQOracle(signalLength, signalLength / 2)
-    // Then, we use genetic algorithm
-    verifier.addGAEQOracleAll(
-        signalLength,
-        maxTest,
-        ArgParser.GASelectionKind.Tournament,
-        populationSize,
-        crossoverProb,
-        mutationProb,
-    )
-    // verifier.addWpMethodEQOracle(6)
-    val result = verifier.run()
-
-    // Print the result
-    if (result) {
-        println("The property is likely satisfied")
-    } else {
-        for (i in 0 until verifier.cexProperty.size) {
-            println("${verifier.cexProperty[i]} is falsified by the following counterexample")
-            println("cex concrete input: ${verifier.cexConcreteInput[i]}")
-            println("cex abstract input: ${verifier.cexAbstractInput[i]}")
-            println("cex output: ${verifier.cexOutput[i]}")
-        }
+SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
+    // Create a list to store the results
+    val results = mutableListOf<ExperimentSummary>()
+    // Repeat the following experiment for the specified number of times
+    for (i in 0 until experimentSize) {
+        val properties = AdaptiveSTLList(stlList, signalLength)
+        // Since SUL counts the number of simulations and the execution time, we need to clear it before each experiment
+        sul.clear()
+        logger.info("Experiment ${i + 1} / $experimentSize")
+        // Configure and run the verifier
+        val verifier = NumericSULVerifier(sul, signalStep, properties, mapper)
+        // Timeout must be set before adding equivalence testing
+        verifier.setTimeout(10 * 60) // 10 minutes
+        // We first try the corner cases
+        verifier.addCornerCaseEQOracle(signalLength, signalLength / 2)
+        // Then, search with GA
+        verifier.addGAEQOracleAll(
+            signalLength,
+            maxTest,
+            ArgParser.GASelectionKind.Tournament,
+            populationSize,
+            crossoverProb,
+            mutationProb,
+        )
+        // Run the experiment
+        var result = runExperiment(verifier, "pacemaker", "pacemaker")
+        results.add(result)
     }
-    println("Execution time for simulation: ${verifier.simulationTimeSecond} [sec]")
-    println("Number of simulations: ${verifier.simulinkCount}")
-    println("Number of simulations for equivalence testing: ${verifier.simulinkCountForEqTest}")
+    FileOutputStream("result-pacemaker.csv").apply { writeCsv(results) }
+    logger.info("The results are written to result-pacemaker.csv")
 }
