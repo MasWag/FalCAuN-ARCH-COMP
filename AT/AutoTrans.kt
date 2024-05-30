@@ -21,7 +21,7 @@
 
 @file:Import("../Common.kt") // Import the common configuration
 
-import net.maswag.InputMapperReader
+import net.maswag.falcaun.*
 
 // Define the configuration of the automatic transmission model
 val initScript = """

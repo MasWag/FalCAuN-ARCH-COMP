@@ -25,8 +25,8 @@
 
 @file:Import("../Common.kt") // Import the common configuration
 
-import net.maswag.*
-import net.maswag.InputMapperReader
+import net.maswag.falcaun.*
+import net.maswag.falcaun.*
 import java.io.BufferedReader
 import java.io.StringReader
 import kotlin.streams.toList

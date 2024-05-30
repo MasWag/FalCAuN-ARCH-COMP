@@ -25,7 +25,7 @@
 
 @file:Import("./AutoTrans.kt") // Import the constants for AutoTrans
 
-import net.maswag.*
+import net.maswag.falcaun.*
 import java.io.BufferedReader
 import java.io.StringReader
 import kotlin.streams.toList
