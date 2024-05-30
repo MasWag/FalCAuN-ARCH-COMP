@@ -7,7 +7,7 @@ FalCAuN-ARCH-COMP
 
 This repository contains the materials to execute [FalCAuN](https://github.com/MasWag/FalCAuN) with the benchmark for ARCH-COMP's [falsification](https://easychair.org/publications/paper/ps5t) track.
 
-Note: The script in this repository requires the development version of FalCAuN (as of 2024-04-25), where we target scripting via Kotlin in addition to the original command line interface.
+Note: the script in this repository requires the development version of FalCAuN (as of 2024-04-25), where we target scripting via Kotlin in addition to the original command line interface.
 
 Requirements
 ------------
