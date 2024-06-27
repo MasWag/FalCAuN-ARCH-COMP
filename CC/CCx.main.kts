@@ -115,7 +115,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
         // Configure and run the verifier
         val verifier = NumericSULVerifier(sul, signalStep, properties, mapper)
         // Timeout must be set before adding equivalence testing
-        verifier.setTimeout(20 * 60) // 20 minutes
+        verifier.setTimeout(200 * 60) // 200 minutes
         // We first try the corner cases
         verifier.addCornerCaseEQOracle(signalLength, signalLength / 2)
         // Then, search with GA
