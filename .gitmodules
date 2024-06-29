@@ -1,0 +1,3 @@
+[submodule "utils/scrdoc"]
+	path = utils/scrdoc
+	url = https://github.com/MasWag/scrdoc.git
