@@ -8,6 +8,7 @@
 #  Masaki Waga
 # HISTORY
 #   - 2021/06/17: initial version
+#   - 2024/06/29: Added mean simulation ratio
 # COPYRIGHT
 #  Copyright (c) 2021 Masaki Waga
 #  Released under the MIT license
@@ -32,7 +33,7 @@ BEGIN {
     # Constants
     MAX_TOTAL_SIMULATION = 1500
     # Print the header
-    print "\"system\",\"property\",\"mean total simulations\",\"median total simulations\",\"sdev total simulations\",\"min total simulations\",\"max total simulations\",\"mean total time\",\"sdev total time\",\"min total time\",\"max total time\",\"mean simulations for equivalence testing\",\"sdev simulations for equivalence testing\",\"min simulations for equivalence testing\",\"max simulations for equivalence testing\",\"mean simulation time\",\"sdev simulation time\",\"min simulation time\",\"max simulation time\",\"num falsified\""
+    print "\"system\",\"property\",\"mean total simulations\",\"median total simulations\",\"sdev total simulations\",\"min total simulations\",\"max total simulations\",\"mean total time\",\"sdev total time\",\"min total time\",\"max total time\",\"mean simulations for equivalence testing\",\"sdev simulations for equivalence testing\",\"min simulations for equivalence testing\",\"max simulations for equivalence testing\",\"mean simulation time\",\"sdev simulation time\",\"min simulation time\",\"max simulation time\",\"num falsified\",\"mean simulation ratio\""
 }
 
 # remove the header
@@ -84,6 +85,23 @@ system_name != current_system_name || property != current_property {
     simulation_time *= 1.0
 }
 
+# accumulate the values for all executions
+{
+    # Sum
+    sum_total_simulation_all += total_simulation
+    sum_total_time_all += total_time
+    sum_eq_simulation_all += eq_simulation
+    sum_simulation_time_all += simulation_time
+    # Square sum
+    sq_sum_total_simulation_all += total_simulation * total_simulation
+    sq_sum_total_time_all += total_time * total_time
+    sq_sum_eq_simulation_all += eq_simulation * eq_simulation
+    sq_sum_simulation_time_all += simulation_time * simulation_time
+    # List
+    total_simulation_list[NR] = total_simulation
+}
+
+
 # Ignore the experiments with too many simulations (and failed experiments)
 total_simulation > MAX_TOTAL_SIMULATION || total_simulation == 0 || falsified == "no" {
     next
@@ -116,7 +134,7 @@ eq_simulation > max_eq_simulation {
 simulation_time > max_simulation_time {
     max_simulation_time = simulation_time
 }
-# accumulate the values
+# accumulate the values for falsified executions
 {
     num_falsified += 1
     # Sum
@@ -181,6 +199,7 @@ END {
 
         median_total_simulation = 0
     }
+    mean_simulation_ratio = 100.0 * sum_simulation_time_all / sum_total_time_all
 
     # Output the summary
     printf "\"%s\",\"%s\",", system_name, property
@@ -192,5 +211,5 @@ END {
         mean_eq_simulation, sdev_eq_simulation, min_eq_simulation, max_eq_simulation
     printf "\"%g\",\"%g\",\"%d\",\"%d\",",
         mean_simulation_time, sdev_simulation_time, min_simulation_time, max_simulation_time
-    printf "\"%d\"\n", num_falsified
+    printf "\"%d\",\"%g\"\n", num_falsified, mean_simulation_ratio
 }
