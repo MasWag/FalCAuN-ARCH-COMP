@@ -1,15 +1,18 @@
-AT_BENCHMARKS := AT1 AT2 AT6a AT6b AT6c AT1_constrained AT2_constrained AT6c_constrained 
-CC_BENCHMARKS := CC1 CC2 CC3
+# -*- mode: makefile; -*-
+AT_BENCHMARKS := AT1 AT2 AT6a AT6b AT6c AT6abc
+CC_BENCHMARKS := CC1 CC2 CC3 CC4
 SC_BENCHMARKS := SCa
-FILES := $(AT_BENCHMARKS:%=AT/run_falcaun_%.sh) $(CC_BENCHMARKS:%=CC/run_falcaun_%.sh) $(SC_BENCHMARKS:%=SC/run_falcaun_%.sh)
-PRODUCTS := $(FILES:%=../../Codes/ARCH-COMP/2021/FALS/FalCAuN/%)
+PM_BENCHMARKS := PMa
+PROJECT_ROOT := $(HOME)/FalCAuN-ARCH-COMP
+LOG_ROOT := $(HOME)/logs/ARCH-COMP2024
+LOG_FILES := $(AT_BENCHMARKS:%=$(LOG_ROOT)/AT/result-%.csv) $(CC_BENCHMARKS:%=$(LOG_ROOT)/CC/result-%.csv) $(SC_BENCHMARKS:%=$(LOG_ROOT)/SC/result-%.csv) $(PM_BENCHMARKS:%=$(LOG_ROOT)/PM/result-%.csv)
+SUMMARY_FILES := $(LOG_FILES:%.csv=%-summary.csv)
+PRODUCT := $(PROJECT_ROOT)/FalCAuN_ARCH2024_summary.csv
 
-all: $(PRODUCTS)
+all: $(PRODUCT)
 
-../../Codes/ARCH-COMP/2021/FALS/FalCAuN/%: /tmp/% Makefile.deploy
-	mv $< $@
-	chmod 755 $@
+$(PRODUCT): $(PROJECT_ROOT)/utils/cat_csv.awk $(SUMMARY_FILES)
+	$^ > $@
 
-/tmp/%: ../% patch
-	mkdir -p $(dir $@)
-	patch $< < ./patch -o $@
+%-summary.csv: %.csv $(PROJECT_ROOT)/utils/gen_summary_csv.awk
+	$(PROJECT_ROOT)/utils/gen_summary_csv.awk < $< > $@
