@@ -97,8 +97,6 @@ system_name != current_system_name || property != current_property {
     sq_sum_total_time_all += total_time * total_time
     sq_sum_eq_simulation_all += eq_simulation * eq_simulation
     sq_sum_simulation_time_all += simulation_time * simulation_time
-    # List
-    total_simulation_list[NR] = total_simulation
 }
 
 
