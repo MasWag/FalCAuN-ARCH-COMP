@@ -8,6 +8,7 @@
 #  Masaki Waga
 # HISTORY
 #   - 2023/04/12: initial version
+#   - 2024/06/29: Updated to follow the specification at ARCH-COMP 2024
 # COPYRIGHT
 #  Copyright (c) 2023 Masaki Waga
 #  Released under the MIT license
@@ -21,7 +22,7 @@
 BEGIN {
     FS = ","
     # Header
-    #E "\"system\",\"property\",\"mean total simulations\",\"median total simulations\",\"sdev total simulations\",\"min total simulations\",\"max total simulations\",\"mean total time\",\"sdev total time\",\"min total time\",\"max total time\",\"mean simulations for equivalence testing\",\"sdev simulations for equivalence testing\",\"min simulations for equivalence testing\",\"max simulations for equivalence testing\",\"mean simulation time\",\"sdev simulation time\",\"min simulation time\",\"max simulation time\",\"num falsified\""
+    #E "\"system\",\"property\",\"mean total simulations\",\"median total simulations\",\"sdev total simulations\",\"min total simulations\",\"max total simulations\",\"mean total time\",\"sdev total time\",\"min total time\",\"max total time\",\"mean simulations for equivalence testing\",\"sdev simulations for equivalence testing\",\"min simulations for equivalence testing\",\"max simulations for equivalence testing\",\"mean simulation time\",\"sdev simulation time\",\"min simulation time\",\"max simulation time\",\"num falsified\",\"mean simulation ratio\""
 }
 
 {
@@ -30,6 +31,9 @@ BEGIN {
 
 # Print the rowValidate the system and property
 NR > 1 && $20 > 0 {
-    printf "%s: %d & & %.1f & %d & %.1f &\n",$2,$20,$3,$4,(100 * $16 / $8) 
+    printf "%s: &%d & &%.1f &%d &%.1f\n",$2,$20,$3,$4,$21
+}
+NR > 1 && $20 == 0 {
+    printf "%s: &0 &0 &-- &-- &%.1f\n",$2,$21
 }
 
