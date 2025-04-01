@@ -24,3 +24,6 @@
 *.html
 *.css
 *.js
+
+# Other files
+.DS_Store
