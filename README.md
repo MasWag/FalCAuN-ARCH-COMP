@@ -7,12 +7,10 @@ FalCAuN-ARCH-COMP
 
 This repository contains the materials to execute [FalCAuN](https://github.com/MasWag/FalCAuN) with the benchmark for ARCH-COMP's [falsification](https://easychair.org/publications/paper/ps5t) track.
 
-Note: the script in this repository requires the development version of FalCAuN (as of 2024-04-25), where we target scripting via Kotlin in addition to the original command line interface.
-
 Requirements
 ------------
 
-To execute the scripts in this repository. You need to install [FalCAuN](https://github.com/MasWag/FalCAuN). As of 2024-04-25, the [`raw_simulink_model`](https://github.com/MasWag/FalCAuN/tree/raw_simulink_model) branch is required.
+To execute the scripts in this repository. You need to install [FalCAuN](https://github.com/MasWag/FalCAuN).
 
 In addition to FalCAuN, you need to install the following tools.
 
@@ -23,6 +21,10 @@ Usage
 -----
 
 You can run the experiment by running the scripts, for example, `cd AT && ./AT1.main.kts`. Since the scripts are sensitive to the current directory, you need to run the scripts in the directory of the benchmark. You can also specify the number of repetitions, for example, `cd AT && ./AT1.main.kts 10`.
+
+### Old scripts
+
+For archival purposes, we keep the old shell scripts used until ARCH-COMP 2023. The usage is similar to the current scripts, for example, `cd ./AT && ./run_falcaun_AT1.sh`.
 
 On the benchmarks
 -----------------
@@ -57,20 +59,19 @@ FalCAuN can falsify AT1, AT2, and AT6{a,b,c,abc}. However, AT5{1,2,3,4} are infe
 
 Encoding of `always_[1.0, 37.0]` makes the LTL formula too large (same as AFC). 
 
-### WT
+<!-- ### WT -->
 
-- WT1, WT2, WT3, WT4
+<!-- - WT1, WT2, WT3, WT4 -->
 
 ### CC (Chasing Cars)
 
-FalCAuN can falsify CC1, CC2, CC3, and CC4.
-However, CC5 and CCx are infeasible because the STL formulas are encoded to huge LTL formulas (same reason as AFC).
+FalCAuN can falsify CC1, CC2, CC3, and CC4. However, CC5 and CCx are infeasible because the STL formulas are encoded to huge LTL formulas (same reason as AFC).
 
 ### F16 (f16-gcas)
 
 FalCAuN cannot handle F16 benchmark because it is not a pure Simulink model but requires quite a lot of wrapper in MATLAB, which is currently not supported.
 
-### sabo
+<!-- ### sabo -->
 
-FalCAuN cannot handle sabo benchmark because it is not a Simulink model but a model implemented in python. It is a future work to support such models.
+<!-- FalCAuN cannot handle sabo benchmark because it is not a Simulink model but a model implemented in python. It is a future work to support such models. -->
 
