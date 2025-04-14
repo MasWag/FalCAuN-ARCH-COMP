@@ -48,6 +48,8 @@ var signalStep = 1.0
 val simulinkSimulationStep = 0.0025
 
 // Define the input mapper
+// Input range:
+// - u_1: 3.99 <= u_1 <= 4.01
 val inputValues = listOf(3.99, 4.00, 4.01)
 val inputMapper = InputMapperReader.make(listOf(inputValues))
 
@@ -84,10 +86,11 @@ val prevMaxPressure = "output(4)"
 val prevMinPressure = "output(5)"
 
 // Define the STL properties
+// SC: □_[30,35] 87 <= y_4 <= 87.5
 val stlFactory = STLFactory()
 val stlList =
     listOf(
-        "(alw_[${(30 / signalStep).toInt()},${(35 / signalStep).toInt()}] ($prevMaxPressure < 87.5 && $prevMaxPressure > 87))",
+        "(alw_[${(30 / signalStep).toInt()},${(35 / signalStep).toInt()}] ($prevMaxPressure < 87.5 && $prevMinPressure > 87))",
     ).stream().map { stlString ->
         stlFactory.parse(
             stlString,
