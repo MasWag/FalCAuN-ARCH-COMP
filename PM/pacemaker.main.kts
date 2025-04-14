@@ -98,12 +98,6 @@ val stlList =
 println(stlList.get(0).toAbstractString())
 val signalLength = (12 / signalStep).toInt()
 
-// Constants for the GA-based equivalence testing
-val maxTest = 10000
-val populationSize = 50
-val crossoverProb = 0.9
-val mutationProb = 0.01
-
 // Load the automatic transmission model. This automatically closes MATLAB
 SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
     // Create a list to store the results
