@@ -72,6 +72,10 @@ However, CC5 and CCx are infeasible because the STL formulas are encoded to huge
 
 FalCAuN cannot handle F16 benchmark because it is not a pure Simulink model but requires quite a lot of wrapper in MATLAB, which is currently not supported.
 
+### SB (Synthetic Benchmark)
+
+"Instance 1" is not available for SB benchmarks. FalCAuN does not support piecewise constant inputs.
+
 <!-- ### sabo -->
 
 <!-- FalCAuN cannot handle sabo benchmark because it is not a Simulink model but a model implemented in python. It is a future work to support such models. -->
