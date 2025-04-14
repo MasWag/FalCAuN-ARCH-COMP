@@ -65,7 +65,8 @@ Encoding of `always_[1.0, 37.0]` makes the LTL formula too large (same as AFC).
 
 ### CC (Chasing Cars)
 
-FalCAuN can falsify CC1, CC2, CC3, and CC4. However, CC5 and CCx are infeasible because the STL formulas are encoded to huge LTL formulas (same reason as AFC).
+FalCAuN can falsify CC1, CC2, CC3, and CC4.
+However, CC5 and CCx are infeasible because the STL formulas are encoded to huge LTL formulas (same reason as AFC).
 
 ### F16 (f16-gcas)
 
