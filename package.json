@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@textlint-rule/textlint-rule-preset-google": "^0.1.2",
+    "textlint": "^14.6.0"
+  }
+}
