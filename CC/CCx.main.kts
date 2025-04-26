@@ -103,7 +103,7 @@ val stlList =
 val signalLength = (50 / signalStep).toInt() + 1
 
 // Load the chasing car model. This automatically closes MATLAB
-SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { sul ->
+SimulinkSUL(initScript, paramNames, signalStep, 10.0 * simulinkSimulationStep).use { sul ->
     // Create a list to store the results
     val results = mutableListOf<ExperimentSummary>()
     // Repeat the following experiment for the specified number of times
