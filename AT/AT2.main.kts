@@ -100,7 +100,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
             mutationProb,
         )
         // Run the experiment
-        var result = runExperiment(verifier, "AT", "AT2")
+        var result = runExperiment(verifier, simulinkSimulationStep, "AT", "AT2")
         results.add(result)
     }
     FileOutputStream("result-AT2.csv").apply { writeCsv(results) }

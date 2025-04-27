@@ -124,7 +124,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
             mutationProb,
         )
         // Run the experiment
-        var result = runExperiment(verifier, "PM", "PMa")
+        var result = runExperiment(verifier, simulinkSimulationStep, "PM", "PMa")
         results.add(result)
     }
     FileOutputStream("result-pacemaker.csv").apply { writeCsv(results) }

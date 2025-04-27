@@ -100,7 +100,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
             mutationProb,
         )
         // Run the experiment
-        val result = runExperiment(verifier, "AT", "AT1")
+        val result = runExperiment(verifier, simulinkSimulationStep, "AT", "AT1")
         results.add(result)
     }
     FileOutputStream("result-AT1.csv").apply { writeCsv(results) }
