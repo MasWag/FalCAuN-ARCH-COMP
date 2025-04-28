@@ -127,6 +127,6 @@ fun runExperiment(verifier: NumericSULVerifier, interpolationStep: Double, syste
         verifier.simulinkCountForEqTest,
         verifier.simulationTimeSecond,
         (if (result) "no" else "yes"),
-        (if (result) "" else "\"${verifier.cexConcreteInput[0].signalValueslinearInterpolate(interpolationStep)}\"")
+        (if (result) "" else "\"${verifier.cexConcreteInput[0].linearInterpolate(interpolationStep)}\"")
     )
 }

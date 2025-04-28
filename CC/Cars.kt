@@ -28,6 +28,7 @@ val initScript = "mdl = 'cars'; load_system(mdl);"
 val paramNames = listOf("throttle", "brake")
 var signalStep = 5.0
 val simulinkSimulationStep = 0.0025
+val interpolationStep = 0.01
 
 // Define the input mapper
 val throttleValues = listOf(0.0, 1.0)
