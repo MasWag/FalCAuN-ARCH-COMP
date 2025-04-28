@@ -90,53 +90,6 @@ fun OutputStream.writeCsv(summary: List<ExperimentSummary>) {
 }
 
 /**
- * Interpolate the given data using linear interpolation.
- *
- * @param original The original data to interpolate. The first element of each element is the timestamp and the others are the data points.
- * @param timeStep The time step for interpolation, i.e., the time between data points in the interpolated data.
- */
-fun linearInterpolate(original: List<List<Double>>, timeStep: Double): List<List<Double>> {
-    if (original.isEmpty() || original.size == 1) return original
-
-    val interpolatedData = mutableListOf<List<Double>>()
-    var currentIndex = 0
-    var nextIndex = 1
-
-    interpolatedData.add(original[0])
-    while (nextIndex < original.size) {
-        val currentTimestamp = original[currentIndex][0]
-        val nextTimestamp = original[nextIndex][0]
-
-        if (currentTimestamp == nextTimestamp) {
-            interpolatedData.add(original[currentIndex])
-            currentIndex++
-            nextIndex++
-            continue
-        }
-
-        var t = currentTimestamp
-        while (t < nextTimestamp) {
-            t += timeStep
-            if (t == nextTimestamp) {
-                interpolatedData.add(original[nextIndex])
-            } else {
-                val ratio = (t - currentTimestamp) / (nextTimestamp - currentTimestamp)
-                val interpolatedValues = original[currentIndex].mapIndexed { index, value ->
-                    if (index == 0) t else value + ratio * (original[nextIndex][index] - value)
-                }
-                interpolatedData.add(interpolatedValues)
-            }
-        }
-
-        currentIndex++
-        nextIndex++
-    }
-
-    return interpolatedData
-}
-
-
-/**
  * Run the experiment with the given verifier.
  *
  * @param verifier The verifier to run the experiment.
@@ -174,6 +127,6 @@ fun runExperiment(verifier: NumericSULVerifier, interpolationStep: Double, syste
         verifier.simulinkCountForEqTest,
         verifier.simulationTimeSecond,
         (if (result) "no" else "yes"),
-        (if (result) "" else "\"${linearInterpolate(verifier.cexConcreteInput[0].signalValues, interpolationStep)}\"")
+        (if (result) "" else "\"${verifier.cexConcreteInput[0].signalValueslinearInterpolate(interpolationStep)}\"")
     )
 }
