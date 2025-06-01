@@ -59,6 +59,7 @@ NR == 2 {
 system_name != current_system_name || property != current_property {
     print "Error: inconsistent system or property!" > "/dev/stderr"
     printf "Expected %s %s\n", system_name, property > "/dev/stderr"
+    printf "Given %s %s\n", current_system_name, current_property > "/dev/stderr"
     exit 1
 }
 
