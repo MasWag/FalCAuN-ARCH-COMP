@@ -31,9 +31,9 @@ BEGIN {
 
 # Print the rowValidate the system and property
 NR > 1 && $20 > 0 {
-    printf "%s: &%d & &%.1f &%d &%.1f\n",$2,$20,$3,$4,$21
+    printf "%s: &%d & &%.1f &%d\n",$2,$20,$3,$4
 }
 NR > 1 && $20 == 0 {
-    printf "%s: &0 &0 &-- &-- &%.1f\n",$2,$21
+    printf "%s: &0 &0 &-- &--\n",$2
 }
 
