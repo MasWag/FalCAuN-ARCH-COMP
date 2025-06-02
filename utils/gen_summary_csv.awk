@@ -198,7 +198,12 @@ END {
 
         median_total_simulation = 0
     }
-    mean_simulation_ratio = 100.0 * sum_simulation_time_all / sum_total_time_all
+    # Avoid division by zero
+    if (sum_total_time_all > 0) {
+        mean_simulation_ratio = 100.0 * sum_simulation_time_all / sum_total_time_all
+    } else {
+        mean_simulation_ratio = 0
+    }
 
     # Output the summary
     printf "\"%s\",\"%s\",", system_name, property
