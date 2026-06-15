@@ -26,6 +26,8 @@
 @file:Import("./AutoTrans.kt") // Import the constants for AutoTrans
 
 import net.maswag.falcaun.*
+import net.maswag.falcaun.parser.STLFactory
+import net.maswag.falcaun.simulink.SimulinkSUL
 import java.io.BufferedReader
 import java.io.StringReader
 import kotlin.streams.toList
@@ -47,7 +49,7 @@ val rotationValues = listOf(4750.0, null)
 val gearValues = listOf(null)
 val outputMapperReader = OutputMapperReader(listOf(velocityValues, rotationValues, gearValues, rotationValues))
 outputMapperReader.parse()
-val mapperString = listOf("previous_max_output(1)").joinToString("\n")
+val mapperString = listOf("previous_max(signal(1))").joinToString("\n")
 val signalMapper: ExtendedSignalMapper = ExtendedSignalMapper.parse(BufferedReader(StringReader(mapperString)))
 assert(signalMapper.size() == 1)
 val mapper =
@@ -56,7 +58,7 @@ val mapper =
 // Define the pseudo signal names
 // Pseudo signals representing the maximum and minimum values between sampling points
 // These signals exclude the begin time and include the end time
-val prevMaxRotation = "output(3)"
+val prevMaxRotation = "signal(3)"
 
 // Define the STL properties
 val stlFactory = STLFactory()
@@ -94,7 +96,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
         verifier.addGAEQOracleAll(
             signalLength,
             maxTest,
-            ArgParser.GASelectionKind.Tournament,
+            GASelectionKind.Tournament,
             populationSize,
             crossoverProb,
             mutationProb,

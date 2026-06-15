@@ -26,7 +26,8 @@
 @file:Import("../Common.kt") // Import the common configuration
 
 import net.maswag.falcaun.*
-import net.maswag.falcaun.*
+import net.maswag.falcaun.parser.STLFactory
+import net.maswag.falcaun.simulink.SimulinkSUL
 import java.io.BufferedReader
 import java.io.StringReader
 import kotlin.streams.toList
@@ -73,7 +74,7 @@ val pressureValues = listOf(87.0, 87.5, null)
 val outputMapperReader =
     OutputMapperReader(listOf(ignoredValues, ignoredValues, ignoredValues, ignoredValues, pressureValues, pressureValues))
 outputMapperReader.parse()
-val mapperString = listOf("previous_max_output(3)", "previous_min_output(3)").joinToString("\n")
+val mapperString = listOf("previous_max(signal(3))", "previous_min(signal(3))").joinToString("\n")
 val signalMapper: ExtendedSignalMapper = ExtendedSignalMapper.parse(BufferedReader(StringReader(mapperString)))
 assert(signalMapper.size() == 2)
 val mapper =
@@ -82,8 +83,8 @@ val mapper =
 // Define the pseudo signal names
 // Pseudo signals representing the maximum and minimum values between sampling points
 // These signals exclude the begin time and include the end time
-val prevMaxPressure = "output(4)"
-val prevMinPressure = "output(5)"
+val prevMaxPressure = "signal(4)"
+val prevMinPressure = "signal(5)"
 
 // Define the STL properties
 // SC: □_[30,35] 87 <= y_4 <= 87.5
@@ -122,7 +123,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
         verifier.addGAEQOracleAll(
             signalLength,
             maxTest,
-            ArgParser.GASelectionKind.Tournament,
+            GASelectionKind.Tournament,
             populationSize,
             crossoverProb,
             mutationProb,

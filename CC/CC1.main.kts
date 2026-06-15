@@ -26,6 +26,8 @@
 @file:Import("./Cars.kt") // Import the constants for Chasing Cars
 
 import net.maswag.falcaun.*
+import net.maswag.falcaun.parser.STLFactory
+import net.maswag.falcaun.simulink.SimulinkSUL
 import java.io.BufferedReader
 import java.io.StringReader
 import kotlin.streams.toList
@@ -93,7 +95,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
         verifier.addGAEQOracleAll(
             signalLength,
             maxTest,
-            ArgParser.GASelectionKind.Tournament,
+            GASelectionKind.Tournament,
             populationSize,
             crossoverProb,
             mutationProb,

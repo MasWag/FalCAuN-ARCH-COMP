@@ -29,6 +29,8 @@
 @file:Import("../Common.kt") // Import the common configuration
 
 import net.maswag.falcaun.*
+import net.maswag.falcaun.parser.STLFactory
+import net.maswag.falcaun.simulink.SimulinkSUL
 import java.io.BufferedReader
 import java.io.StringReader
 
@@ -65,7 +67,7 @@ val ignoreValue = listOf(null)
 val paceCountValues = listOf(7.0, 16.0, null)
 val outputMapperReader = OutputMapperReader(listOf(ignoreValue, ignoreValue, paceCountValues, paceCountValues, ignoreValue))
 outputMapperReader.parse()
-val mapperString = listOf("previous_max_output(2)", "previous_min_output(2)").joinToString("\n")
+val mapperString = listOf("previous_max(signal(2))", "previous_min(signal(2))").joinToString("\n")
 val signalMapper: ExtendedSignalMapper = ExtendedSignalMapper.parse(BufferedReader(StringReader(mapperString)))
 assert(signalMapper.size() == 2)
 val mapper =
@@ -77,8 +79,8 @@ val LRL = "signal(1)"
 val paceCount = "signal(2)"
 // Pseudo signals representing the maximum and minimum values between sampling points
 // These signals exclude the begin time and include the end time
-val prevMaxPaceCount = "output(3)"
-val prevMinPaceCount = "output(4)" // We do not use the minimum values show as an example
+val prevMaxPaceCount = "signal(3)"
+val prevMinPaceCount = "signal(4)" // We do not use the minimum values show as an example
 
 // Define the STL properties
 val stlFactory = STLFactory()
@@ -118,7 +120,7 @@ SimulinkSUL(initScript, paramNames, signalStep, simulinkSimulationStep).use { su
         verifier.addGAEQOracleAll(
             signalLength,
             maxTest,
-            ArgParser.GASelectionKind.Tournament,
+            GASelectionKind.Tournament,
             populationSize,
             crossoverProb,
             mutationProb,
