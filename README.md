@@ -22,6 +22,50 @@ Usage
 
 You can run the experiment by running the scripts, for example, `cd AT && ./AT1.main.kts`. Since the scripts are sensitive to the current directory, you need to run the scripts in the directory of the benchmark. You can also specify the number of repetitions, for example, `cd AT && ./AT1.main.kts 10`.
 
+To run every `.main.kts` script from the repository root, use:
+
+```sh
+./run_all_main_kts.sh
+```
+
+You can pass the number of repetitions to every script. For example, the following runs all scripts with 10 repetitions:
+
+```sh
+./run_all_main_kts.sh 10
+```
+
+For a quick initialization check without running experiments, pass `0`:
+
+```sh
+./run_all_main_kts.sh 0
+```
+
+The runner executes each script from its own benchmark directory, matching the manual usage above.
+
+### Runtime notes
+
+The `.main.kts` scripts are executable entrypoints that invoke `kscript` directly through their shebang. `run_all_main_kts.sh` prepares the runtime environment before invoking them.
+
+The runner tries to configure the following automatically:
+
+- SDKMAN from `$SDKMAN_DIR`, `$HOME/.sdkman`, `/opt/homebrew/opt/sdkman-cli/libexec`, or `/usr/local/opt/sdkman-cli/libexec`.
+- JDK 17 from macOS `/usr/libexec/java_home -v 17` or common Linux locations such as `/usr/lib/jvm`.
+- `MATLAB_HOME` from `/Applications/MATLAB_R*.app` on macOS or `/usr/local/MATLAB/R*` on Linux.
+
+If automatic setup fails, configure the missing paths manually before running the scripts. For example:
+
+```sh
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export PATH="$JAVA_HOME/bin:$PATH"
+export MATLAB_HOME=/Applications/MATLAB_R2026a.app
+```
+
+On Ubuntu or another Linux environment, use the installed paths on that system, for example `JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64` and `MATLAB_HOME=/usr/local/MATLAB/R2026a`.
+
+The verified local runtime used SDKMAN installed by Homebrew at `/opt/homebrew/opt/sdkman-cli/libexec`, Kotlin 1.8.22 via `kscript`, JDK 17, and MATLAB at `/Applications/MATLAB_R2026a.app`. The JDK 17 selection matters because Kotlin 1.8.22 fails before compilation under the default OpenJDK 26.0.1 runtime.
+
+The AT scripts also depend on `AT/sldemo_autotrans_data.mat`, copied from the MATLAB R2026a automatic transmission example. The Simulink model `AT/Autotrans_shift.mdl` loads `sldemo_autotrans_data`, which defines variables such as `converter_data` and `vehicledata`; keeping the data file in `AT/` avoids depending on a user-specific MATLAB examples directory under `~/Documents/MATLAB/Examples`.
+
 ### Old scripts
 
 For archival purposes, we keep the old shell scripts used until ARCH-COMP 2023. The usage is similar to the current scripts, for example, `cd ./AT && ./run_falcaun_AT1.sh`.
@@ -79,4 +123,3 @@ FalCAuN cannot handle F16 benchmark because it is not a pure Simulink model but 
 <!-- ### sabo -->
 
 <!-- FalCAuN cannot handle sabo benchmark because it is not a Simulink model but a model implemented in python. It is a future work to support such models. -->
-

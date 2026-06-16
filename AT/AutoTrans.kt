@@ -29,13 +29,13 @@ val initScript = """
 % We use the automatic transmission model in [Hoxha et al.,
 % ARCH@CPSWeek 2014].
 
-%% Add the example directory to the path
-versionString = version('-release');
+%% Add the benchmark directory to the path
 oldpath = path;
-path(strcat(userpath, '/Examples/R', versionString, '/simulink_automotive/ModelingAnAutomaticTransmissionControllerExample/'), oldpath);
+path(pwd, oldpath);
 
 %% Load the AT model
 mdl = 'Autotrans_shift';
+load('sldemo_autotrans_data.mat');
 load_system(mdl);
 
 %% References
