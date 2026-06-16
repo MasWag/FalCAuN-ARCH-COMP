@@ -1,4 +1,5 @@
-#!/usr/bin/env kscript
+#!/usr/bin/env bash
+//bin/bash -c 'if [ ! -s "${SDKMAN_DIR:-}/bin/sdkman-init.sh" ] && [ -d /opt/homebrew/opt/sdkman-cli/libexec ]; then export SDKMAN_DIR=/opt/homebrew/opt/sdkman-cli/libexec; fi; if [ -s "${SDKMAN_DIR:-}/bin/sdkman-init.sh" ]; then . "$SDKMAN_DIR/bin/sdkman-init.sh"; fi; if [ -x /usr/libexec/java_home ]; then JAVA_17_HOME=$(/usr/libexec/java_home -v 17 2>/dev/null || true); if [ -n "$JAVA_17_HOME" ]; then export JAVA_HOME="$JAVA_17_HOME"; export PATH="$JAVA_HOME/bin:$PATH"; fi; fi; exec kscript "$0" "$@"' "$0" "$@"; exit $?
 /*****h* CC/CC1
  *  NAME
  *   CC1.main.kts
