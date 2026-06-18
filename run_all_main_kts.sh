@@ -120,9 +120,9 @@ if ! command -v kscript >/dev/null 2>&1; then
 or set SDKMAN_DIR to your SDKMAN installation, then retry ./run_all_main_kts.sh"
 fi
 
+#AT/AT1.main.kts
+#AT/AT2.main.kts
 scripts='
-AT/AT1.main.kts
-AT/AT2.main.kts
 AT/AT6a.main.kts
 AT/AT6abc.main.kts
 AT/AT6b.main.kts
